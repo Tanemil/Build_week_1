@@ -94,10 +94,12 @@ input#menu_button:checked ~ nav {
 .container, .footer {
     font-family: my_font;
 }
-.container {
-    background-image: url(/assets/images/subscribe-bg.jpg), url(/assets/images/overlay-pattern.png);
-    
-    background-repeat: no-repeat, no-repeat;
+.tomato_container {
+    background-image: url(/assets/images/subscribe-bg.jpg);
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ------ Newsletter ------ */
