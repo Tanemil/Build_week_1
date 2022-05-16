@@ -1,0 +1,76 @@
+@font-face {
+    font-family: my_font;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  }
+
+.backgound_container{
+    background-image: url(../images/blog/blog-bg.jpg);
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h4{
+    font-family: my_font;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+p{
+    font-family: my_font;
+    font-size: 0.9rem;
+    color: #959595;
+    margin: 0 2rem;
+}
+
+hr{
+    border-top: 1px solid #959595;
+    border-bottom: none ;
+    margin: 0 12rem;
+}
+
+section.backgound_container div.blog_container{
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.blog_container div.box3 , .blog_container div.box4{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section div div img{
+    width: 100%;
+}
+
+section div div div{
+    background-color: white;
+    width: 100%;
+}
+
+section div div div h4 , section div div div p{
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:767px) {
+    hr{
+        margin: 0 40%;
+    }
+    section.backgound_container div.blog_container{
+        max-width: 46rem;
+        margin: 0 auto;
+    }
+    .box_img_1 , .box_img_2 , .box_img_3 , .box_img_4 , .box_img_5 , .box_img_6{
+        width: 100%;
+    }
+    .blog_container div.box1 , .blog_container div.box2 , .blog_container div.box3 ,.blog_container div.box4 ,.blog_container div.box5 , .blog_container div.box6 {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 0;
+    }
+    .blog_container div.box3 ,.blog_container div.box4{
+        flex-direction: row-reverse;
+    }
+    
+}
