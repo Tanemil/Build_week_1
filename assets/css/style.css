@@ -19,10 +19,7 @@ section .menu{
     font-size: 45px;
 
 }
-@font-face {
-    font-family: template-font;
-    src: url(assets/fonts/ufonts.com_tw-cen-mt.ttf);
-  }
+
 button{
     color: #FF530A;
 }
