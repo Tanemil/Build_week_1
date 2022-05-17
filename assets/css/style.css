@@ -1,4 +1,4 @@
-body h1, h2, h3, h4, p {
+body h1, h2, h3, h4, p, input, button {
     font-family: my_font;
     color: #2E2E2E;
 }
@@ -271,38 +271,69 @@ input#menu_button:checked ~ nav {
 
 .tomato_container {
     background: url(/assets/images/subscribe-bg.jpg);
-    background-position: center;
+    background-position: left;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 .second_layer {
-    background: url(/assets/images/overlay-pattern.png);
+    background: url(/assets/images/overlay-pattern2.png);
+    background-attachment: fixed; 
+}
+.third_layer {
+    background-color: rgba(79, 79, 79, 0.199);
     background-attachment: fixed; 
 }
 
 /* ------ Newsletter ------ */
 .newsletter {
-    padding: 100px 20px;
+    padding: 130px 20px;
+    margin-bottom: 75px;
     text-align: center;
     color: white;
     font-weight: bold;
 }
-.newsletter input {
-    width: 90%;
+.newsletter h1 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+.newsletter span {
+    color: #ff550b;
+    text-transform: lowercase;
+    font-size: 0.9em;
 }
 .newsletter hr {
-    border-top: 1px solid #ffffff;
-    border-bottom: none ;
-    margin: 0 12rem;
+    margin-bottom: 25px;
+    width: 30%;
+    background-color: rgb(190, 190, 190);
+    border: 0.5px solid rgb(190, 190, 190);
 }
-
+.newsletter p {
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: auto;
+}
+.newsletter input#subscribe {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 1em;
+    width: 95%;
+    opacity: 85%;
+    padding: 25px 10px;
+}
 .newsletter a p {
-    display: inline-block;
+    float: left;
+    width: 30%;
     padding: 20px 50px;
-    background-color: #7ec4bc;
+    background-color: rgb(132, 189, 191);
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.1em;
 }
 .newsletter a:link {
     text-decoration: none;
@@ -310,32 +341,68 @@ input#menu_button:checked ~ nav {
 .newsletter a:visited {
     color: white;
 }
-.newsletter span {
-    color: #ff550b;
+.newsletter a:hover {
+    animation: shadow 2.5s infinite;
+}
+.newsletter a:active {
     
+}
+@keyframes shadow {
+    0% { box-shadow: 0 0 0 5px rgba(132, 189, 191, 1);}
+    25% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.7);}
+    50% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.4);}
+    100% { box-shadow: 0 0 0 0 rgba(132, 189, 191, 0.2);}
 }
 
 /* ------ Form ------ */
 .form {
-    padding: 100px 20px 50px 20px;
+    padding: 100px 20px;
+    background-color: white;
 }
-/* .form h2 {
+.form h1 {
+    margin-bottom: 40px;
+    font-size: 1.3em;
     text-align: center;
     color: #343434;
-} */
-
-/* .form h2 span, .form h3 span {
+}
+.form h1 span {
+    font-size: 1.4em;
     text-transform: uppercase;
     color: #ff550b;
     font-weight: bold;
-} */
+}
+.form hr {
+    margin: auto;
+    width: 35%;
+    background-color: rgb(190, 190, 190);
+    border: 0.5px solid rgb(190, 190, 190);
+}
+.form h3 {
+    margin-top: -10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.form h3 span {
+    text-transform: uppercase;
+    color: #ff550b;
+}
 .form input#name, input#email, input#text  {
-    width: 100%;
-    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1em;
+    width: 95%;
+    opacity: 85%;
+    padding: 20px 10px;
     border: 1px solid lightgrey;
 }
-.form a p[title="msg"] {
-    display: inline-block;
+input#text {
+    padding: 20px 10px 100px 10px;
+}
+.form a p {
+
+    color: white;
+    float: center;
+    text-align: center;
     padding: 20px 50px;
     background-color: #ff550b;
     text-transform: uppercase;
@@ -431,7 +498,7 @@ footer h3 span {
     background-repeat: no-repeat;
 }
 
-hr{
+.backgound_container hr{
     border-top: 1px solid #959595;
     border-bottom: none ;
     margin: 0 12rem;
