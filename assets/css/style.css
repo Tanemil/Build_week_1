@@ -1,10 +1,13 @@
 
+
 .container {
     width: 80%;
     margin: 0 auto;
+
 }
 
 header {
+    
     box-shadow: 0 2px 10px rgb(226, 226, 226);
     padding: 1em;
     position: sticky;
@@ -17,6 +20,7 @@ header {
 
 header div {
     display: inline-block;
+   
 
 
 }
@@ -37,6 +41,8 @@ input#menu_button:checked ~ nav {
         position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
+    
+
     }
 }
 
@@ -48,6 +54,8 @@ input#menu_button:checked ~ nav {
     section.backgound_container div.blog_container{
         max-width: 46rem;
         margin: 0 auto;
+        
+        
     }
     .box_img_1 , .box_img_2 , .box_img_3 , .box_img_4 , .box_img_5 , .box_img_6{
         width: 100%;
@@ -65,6 +73,7 @@ input#menu_button:checked ~ nav {
 
     #menu_mobile {
         display: none;
+        
     }
 
     body header nav ul {
@@ -80,6 +89,7 @@ input#menu_button:checked ~ nav {
     header nav ul li a {
         text-decoration: none;
         color: grey;
+        
 
     }
 }
