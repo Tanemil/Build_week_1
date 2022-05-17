@@ -147,6 +147,8 @@ input#menu_button:checked ~ nav {
     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
 }
 
+/* SLIDER Img */
+
 /* ---------- Main (Newsletter-Form) ------------ */
 
 .container, .footer {
@@ -333,6 +335,7 @@ section.backgound_container div.blog_container{
 
 section div div img{
     width: 100%;
+    height: 100%;
 }
 
 section div div div{
