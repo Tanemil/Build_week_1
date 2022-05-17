@@ -57,6 +57,9 @@ p{
     position:relative;
    
 }
+/*.dot{
+    border-bottom: 2px dotted;
+}*/
 
 .moreinfor{
     visibility: visible;
@@ -96,7 +99,6 @@ p{
 
 header {
     
-    box-shadow: 0 2px 10px rgb(226, 226, 226);
     padding: 1em;
     position: sticky;
     top: 0;
