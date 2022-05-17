@@ -17,9 +17,8 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 4em;
 }
 h4{
@@ -282,7 +281,7 @@ input#menu_button:checked ~ nav {
     background-attachment: fixed; 
 }
 .third_layer {
-    background-color: rgba(79, 79, 79, 0.199);
+    background-color: rgba(129, 122, 122, 0.19);
     background-attachment: fixed; 
 }
 
@@ -314,7 +313,6 @@ input#menu_button:checked ~ nav {
 }
 .newsletter p {
     color: white;
-    text-shadow: 0.5px 0.5px 0.5px white;
     font-weight: 500;
     font-size: 1.1em;
     margin: auto;
@@ -329,8 +327,7 @@ input#menu_button:checked ~ nav {
 }
 .newsletter a p {
     float: left;
-    width: 30%;
-    padding: 20px 50px;
+    padding: 20px 70px;
     background-color: rgb(132, 189, 191);
     text-transform: uppercase;
     font-weight: bold;
@@ -357,7 +354,7 @@ input#menu_button:checked ~ nav {
 
 /* ------ Form ------ */
 .form {
-    padding: 100px 20px;
+    padding: 100px 20px 50px 20px;
     background-color: white;
 }
 .form h1 {
@@ -375,12 +372,11 @@ input#menu_button:checked ~ nav {
 .form hr {
     margin: auto;
     width: 35%;
-    background-color: rgb(190, 190, 190);
-    border: 0.5px solid rgb(190, 190, 190);
+    background-color: rgb(214, 214, 214);
+    border: 0.5px solid rgb(214, 214, 214);
 }
 .form h3 {
     margin-top: -10px;
-    font-size: 1.3em;
     font-weight: bold;
 }
 .form h3 span {
@@ -400,15 +396,14 @@ input#text {
     padding: 20px 10px 100px 10px;
 }
 .form a p {
-
+    margin: auto; 
+    margin-top: 30px;
     color: white;
-    float: center;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px 40px;
     background-color: #ff550b;
     text-transform: uppercase;
     font-weight: bold;
-    
 }
 .form a:link {
     text-decoration: none;
@@ -430,9 +425,15 @@ footer h3 span {
 /* ------ Contact-Us ------ */
 .contact-us {
     padding: 20px;
+    line-height: 3em;
 }
 .contact-us h4 {
     color: #ff550b;
+    font-weight: 100;
+}
+.contact-us p {
+    color: #343434;
+    margin: auto;
 }
 .contact-us i, .contact-us h4 {
     display: inline-block;
@@ -443,29 +444,52 @@ footer h3 span {
 }
 /* ------ Blog-Posts ------ */
 .blog-posts {
-    padding: 20px;
+    padding: 50px 20px 30px 20px;
+}
+.blog-posts h4 {
+    color: #ff550b;
+    line-height: 2.2em;
+}
+.blog-posts p {
+    line-height: 1.8em;
+    color: #343434;
+    margin: auto;
 }
 /* ------ Photo-Stream ------ */
 .photo-stream {
-    padding: 20px;
+    padding: 30px 20px 130px 20px;
+}
+.photo-stream #images img {
+    margin: 20px 20px 20px 0;
+
 }
 .photo-stream span#min {
     color: #343434;
     text-transform: capitalize;
 }
 .photo-stream i {
+    margin-right: 15px;
+    margin-top: -10px;
     color: #b0b0b0;
     font-size: 40px;
 }
 /* ------ Copyright ------ */
 .copyright {
-    color: #343434;
-    padding: 20px;
+    
+    padding: 25px 5px;
     background-color: #e9e9e9;
     text-align: center;
     font-weight: bold;
 }
+.copyright p {
+    margin: auto;
+    font-size: 0.75em;
+    color: #343434;
+    letter-spacing: 0.1em;
+}
 .copyright span {
+    line-height: 2em;
+    font-size: 1.3em;
     color: #ff550b;
 }
 
