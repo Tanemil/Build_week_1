@@ -32,16 +32,22 @@ p{
     margin: 0 2rem;
     line-height: 1.5em;
 }
+.dot{
+    border-bottom: #959595 dotted;
+    position:absolute;
+}
 
 .menu{
     position: relative;
     padding: 2.4em; 
     padding-top: 2.5em;
+    line-height: 4em;
+    width: 0 auto;
     
     
 }
 .menu p{
-    line-height: 6em;
+    line-height: 2em;
 }
 
 .titlemenu{
@@ -55,24 +61,21 @@ p{
 
 .moreinfor{
     visibility: visible;
-   /* animation-duration: 500ms;
+   animation-duration: 500ms;
     animation-delay: 1200ms;
-    animation-name: bounceIn;*/
+    animation-name: bounceIn;
     padding: 6px 12px;
     border-radius: 0px;
     background: none;
     color: #FF530A;
     border: 1px solid #FF530A;
-   /* text-transform: uppercase;
+    text-transform: uppercase;
     font-weight: 600;
     transition: .3s all;
     flex-direction: right;
-    display: inline-block;*/
-    margin-left: 50em;
-    height: 4rem;
-    width: 12rem;
-    margin-top: 6em;
-    position:sticky;
+    display: inline-block;
+    float:right;
+    
     
 
 }
@@ -81,9 +84,9 @@ p{
     /*border-style: dotted;*/
 
 }
-.price{
+/*h2 .menu{
     color: #959595;
-}
+}*/
 
 
 .container {
