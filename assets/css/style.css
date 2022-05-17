@@ -245,6 +245,7 @@ input#menu_button:checked ~ nav {
     font-weight: 400;
     font-family: my_font;
     
+    
 }
 
 .container-chef span {
@@ -514,9 +515,11 @@ section.backgound_container button a{
 @media screen and (min-width:991px){
     section.backgound_container div.blog_container div.box1 {
         grid-area: box1;
+        
     }
     section.backgound_container div.blog_container div.box2 {
         grid-area: box2;
+        
     }
     section.backgound_container div.blog_container div.box3 {
         grid-area: box3;
@@ -526,6 +529,7 @@ section.backgound_container button a{
     }
     section.backgound_container div.blog_container div.box5 {
         grid-area: box5;
+
     }
     section.backgound_container div.blog_container div.box6 {
         grid-area: box6;
@@ -539,7 +543,7 @@ section.backgound_container button a{
     }
     section.backgound_container div.blog_container{
         max-width: 58rem;
-        height: 58rem;
+        height: 35rem;
     }
     section.backgound_container div.button_container_blog{
         display: flex;
