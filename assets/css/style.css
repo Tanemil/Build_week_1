@@ -152,6 +152,7 @@ input#menu_button:checked ~ nav {
 /* SLIDER Img */
 
 
+
 .container_First {
     justify-content: space-between;
     align-items: center;
@@ -160,8 +161,8 @@ input#menu_button:checked ~ nav {
 }
 
 .container_First span {
-    color: #eb5b23;
-    
+    color: #FF530A;
+    font-size: 1.3rem;
 }
 
 .container_First h3 {
@@ -171,43 +172,47 @@ input#menu_button:checked ~ nav {
 
 .scroll-images {
     width: 100%;
-    height: 160px;
+    height: 170px;
     display: flex;
     justify-content:start;
     overflow: auto;
     scroll-behavior: smooth;
     align-items: center;
+    background-position: center;
+    margin-top: 70px;
+    background-size: cover;
     
 }
 
 .div-images {
-    min-width: 300px;
-    height: 200px;
+    min-width: 250px;
+    height: 150px;
     margin: 10px 0px;
     cursor: pointer;
     border-radius: 3px;
     overflow: hidden;
-    margin-top: 70px;
+    
 }
 
 .child-img {
     width: 100%;
     height: 100%;
+   
 }
 
 .container-scroll {
     display: inline-block;
     margin-left: 50%;
     transform: translate(-50%);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .dot {
     display:inline-block;
-    width: 3px;
+    width: 1px;
     height: 12px;
-    border-radius: 50%;
+    border-radius: 100%;
     border-style: none;
     margin: 0 auto;
     background-color: grey;
@@ -219,6 +224,48 @@ input#menu_button:checked ~ nav {
 .dot:hover {
     background-color: #eb5b23;
 }
+
+/* SLIDER PART 2 */
+
+.container-chef {
+     background-color: rgb(246, 246, 246);
+     width: 110%;
+     margin-left: -5%;
+     text-align: center;
+}
+
+.img-chef {
+    margin-top: 70px;
+    
+    
+}
+
+.container-chef h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: my_font;
+    
+}
+
+.container-chef span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FF530A;
+}
+
+.container-chef hr {
+    margin-bottom: 40px;
+    margin-top: 45px;
+    color: rgb(247, 247, 247);
+}
+
+.container-chef p {
+    font-size: 1.0em;
+    line-height: 1.7;
+    padding-bottom: 70px;
+}
+
+
 
 /* ---------- Main (Newsletter-Form) ------------ */
 
