@@ -222,15 +222,16 @@ input#menu_button:checked ~ nav {
 
 /* ---------- Main (Newsletter-Form) ------------ */
 
-.container, .footer {
-    font-family: my_font;
-}
 .tomato_container {
-    background-image: url(/assets/images/subscribe-bg.jpg);
+    background: url(/assets/images/subscribe-bg.jpg);
     background-position: center;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
+}
+.second_layer {
+    background: url(/assets/images/overlay-pattern.png);
+    background-attachment: fixed; 
 }
 
 /* ------ Newsletter ------ */
