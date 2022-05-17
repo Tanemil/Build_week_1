@@ -1,13 +1,36 @@
-h4{
+body h1, h2, h3, h4, p {
     font-family: my_font;
+    color: #2E2E2E;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 4em;
+}
+h4{
     font-weight: bold;
     font-size: 1.2rem;
 }
 p{
-    font-family: my_font;
     font-size: 0.9rem;
     color: #959595;
     margin: 0 2rem;
+    line-height: 1.5em;
 }
 
 section .menu{
@@ -22,33 +45,23 @@ section .menu{
     color: #2E2E2E;
     padding:2,5em 0em;
     position:relative;
-    font-size: 36px;
    
 }
-.titlemenu span{
-    color: #FF530A;
-    font-size: 45px;
 
-}
+/* button{
+    color: #FF530A;
+} */
 
-button{
-    color: #FF530A;
-}
-span{
-    color: #FF530A;
-    font-size: 36px;
-}
 .moreinfo{
     visibility: visible;
     animation-duration: 500ms;
     animation-delay: 1200ms;
     animation-name: bounceIn;
-    padding: 6px-12px;
+    padding: 6px 12px;
     border-radius: 0px;
     background: none;
     color: #FF530A;
     border: 1px solid #FF530A;
-    font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
     transition: .3s all;
@@ -174,7 +187,6 @@ input#menu_button:checked ~ nav {
 
 .container_First h3 {
     margin-top: 50px;
-    font-size: 1.3rem;
     margin-bottom: 30px;
 }
 
@@ -253,10 +265,11 @@ input#menu_button:checked ~ nav {
     width: 90%;
 }
 .newsletter hr {
-    width: 30%;
-    background-color: rgb(190, 190, 190);
-    border: 0.5px solid rgb(190, 190, 190);
+    border-top: 1px solid #ffffff;
+    border-bottom: none ;
+    margin: 0 12rem;
 }
+
 .newsletter a p {
     display: inline-block;
     padding: 20px 50px;
@@ -279,26 +292,16 @@ input#menu_button:checked ~ nav {
 .form {
     padding: 100px 20px 50px 20px;
 }
-.form hr {
-    width: 30%;
-    background-color: rgb(190, 190, 190);
-    border: 0.5px solid rgb(190, 190, 190);
-}
-.form h2 {
+/* .form h2 {
     text-align: center;
     color: #343434;
-}
-.form h3 {
-    text-transform: uppercase;
-    text-align: left;
-    color: #343434;
-    font-weight: bold;
-}
-.form h2 span, .form h3 span {
+} */
+
+/* .form h2 span, .form h3 span {
     text-transform: uppercase;
     color: #ff550b;
     font-weight: bold;
-}
+} */
 .form input#name, input#email, input#text  {
     width: 100%;
     padding: 10px 0;
@@ -324,12 +327,6 @@ input#menu_button:checked ~ nav {
 }
 
 /* --------------- Footer ---------------- */
-footer h3 {
-    text-transform: uppercase;
-    text-align: left;
-    color: #343434;
-    font-weight: bold;
-}
 
 footer h3 span {
     color: #ff550b;
