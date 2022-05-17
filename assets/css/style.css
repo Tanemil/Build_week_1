@@ -1,4 +1,14 @@
-
+h4{
+    font-family: my_font;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+p{
+    font-family: my_font;
+    font-size: 0.9rem;
+    color: #959595;
+    margin: 0 2rem;
+}
 
 section .menu{
     padding: 4.3em 0em;
@@ -297,24 +307,14 @@ footer h3 span {
     color: #ff550b;
 }
 
+/* --------------- Blog ---------------- */
+
 .backgound_container{
     background-image: url(../images/blog/blog-bg.jpg);
     background-position: center;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-h4{
-    font-family: my_font;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-p{
-    font-family: my_font;
-    font-size: 0.9rem;
-    color: #959595;
-    margin: 0 2rem;
 }
 
 hr{
