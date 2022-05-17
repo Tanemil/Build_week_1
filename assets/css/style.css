@@ -57,6 +57,9 @@ p{
     position:relative;
    
 }
+/*.dot{
+    border-bottom: 2px dotted;
+}*/
 
 .moreinfor{
     visibility: visible;
