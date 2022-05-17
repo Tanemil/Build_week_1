@@ -373,7 +373,7 @@ input#menu_button:checked ~ nav {
 
 /* ------ Form ------ */
 .form {
-    padding: 100px 20px 50px 20px;
+    padding: 100px 0 0 0;
     background-color: white;
 }
 .form h1 {
@@ -390,12 +390,13 @@ input#menu_button:checked ~ nav {
 }
 .form hr {
     margin: auto;
-    width: 35%;
+    width: 20%;
     background-color: rgb(214, 214, 214);
     border: 0.5px solid rgb(214, 214, 214);
 }
 .form h3 {
     margin-top: -10px;
+    margin-left: 25px;
     font-weight: bold;
 }
 .form h3 span {
@@ -406,7 +407,7 @@ input#menu_button:checked ~ nav {
     margin: 10px 0;
     font-weight: 500;
     font-size: 1em;
-    width: 95%;
+    width: 90%;
     opacity: 85%;
     padding: 20px 10px;
     border: 1px solid lightgrey;
@@ -415,7 +416,6 @@ input#text {
     padding: 20px 10px 100px 10px;
 }
 .form a p {
-    margin: auto; 
     margin-top: 30px;
     color: white;
     text-align: center;
@@ -445,6 +445,12 @@ footer h3 span {
 .contact-us {
     padding: 20px;
     line-height: 3em;
+}
+.footer h3#tablet {
+    padding: 50px 20px 0 20px;
+}
+.footer h3#desktop {
+    display: none;
 }
 .contact-us h4 {
     color: #ff550b;
@@ -511,6 +517,154 @@ footer h3 span {
     font-size: 1.3em;
     color: #ff550b;
 }
+
+/* Media Queries Gian */
+
+@media screen and (min-width:767px) { /* Tablet */
+    .newsletter {
+        padding: 130px 20px 10px 20px;
+    }
+    .newsletter #subscription input {
+        width: 40%;
+        padding: 0 50px;
+        height: 62px;
+    }
+    .newsletter input#subscribe {
+        padding-left: 10px;
+    }
+    .newsletter a p {
+        margin-left: -4.5px;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 45px;
+        width: 220px;
+        height: 62px;
+        float: none;
+    }
+    .newsletter h1 {
+        font-size: 2.5em;
+        margin-bottom: 50px;
+    }
+    .newsletter span {
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+    .newsletter hr {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+    .form {
+        padding: 100px 20px 50px 20px;
+    }
+    .form h1 {
+        font-size: 2em;
+    }
+    .form h3 {
+        margin-bottom: -20px;
+    }
+    .form hr {
+        width: 20%;
+    }
+    .form ul li input#name, input#email, input#text {
+        font-size: 0.8em;
+        margin: 5px 0;
+    }
+    .form span a p {
+        width: 500px;
+        padding: 15px 40px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .footer {
+        padding: 0 40px;
+    }
+    .footer h3#tablet {
+        padding: 0 10px;
+    }
+    .footer h3#desktop {
+        display: none;
+    }
+    .contact-us {
+        padding: 0 10px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+    .contact-us div {
+        margin-right: 20px;
+    }
+    .blog-posts {
+        padding: 10px 10px;
+    }
+    .photo-stream {
+        padding: 10px 10px 100px 10px;
+    }
+    .photo-stream #images {
+        margin-top: -25px;
+    }
+    .copyright {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width:991px) { /* Desktop small screen */
+    .newsletter input#subscribe {
+        padding-left: 10px;
+    }
+    .form h3 {
+        margin-left: 75px;
+    }
+    .form input#name, input#email, input#text  {
+        width: 85%;
+    }
+    .form span a p {
+        margin-right: 72px;
+        float: right;
+        width: 500px;
+    }
+    .footer {
+        padding: 100px 0 0 0;
+    }
+    footer .contact-us, .blog-posts, .photo-stream {
+        display: inline-table;
+        width: 30%;
+        padding: 0 0 100px 0;
+    }
+    footer .contact-us {
+        padding-left: 50px;
+    }
+    footer h3 {
+        margin-bottom: 15px;
+    }
+    footer h3#tablet {
+        display: none;
+    }
+    .contact-us h3#desktop {
+        display: block;
+    }
+} 
+
+@media screen and (min-width:1200px){ /* Desktop big screen */
+    .newsletter input#subscribe {
+        padding-left: 10px;
+        width: 350px;
+    }
+    .form input#name, input#email, input#text  {
+        width: 95%;
+    }
+    .form h3 {
+        margin-left: 20px;
+    }
+    .form span a p {
+        margin-right: 22px;
+    }
+    .blog-posts #desc_1, #desc_2 {
+        padding-right: 30px;
+    }
+    .photo-stream {
+        margin-left: 50px;
+    }
+}
+
 
 /* --------------- Blog ---------------- */
 
@@ -651,7 +805,6 @@ section.backgound_container button a{
     }
     
 }
-
 @media screen and (min-width:991px){
     section.backgound_container div div div div img{
         height: auto;

@@ -198,8 +198,10 @@
                         <h1>Subscribe <span>to our</span> Newsletter</h1>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                        <input type="email" id="subscribe" placeholder="Enter your email to subscribe..." maxlength="48">
-                        <a href="#" title="subscribe"><p>Subscribe</p></a>
+                            <div id="subscription">
+                                <input type="email" id="subscribe" placeholder="Enter your email to subscribe..." maxlength="48">
+                                <a href="#" title="subscribe"><p>Subscribe</p></a>
+                            </div>
                     </div>
 
                     <div class="form">
@@ -216,10 +218,11 @@
                                 <input type="email" name="email" id="email" placeholder="Write your email address here..." maxlength="48"></li>
                                 <li><label for="message"></label>
                                 <input type="text" id="text" placeholder="Write your message here..." maxlength="200"></li>
+                                <span><a href="#" title="contact"><p>Send your message</p></a></span>
                             </ul>
-                            </fieldset>  
+                            </fieldset>
                         </form>
-                        <a href="#" title="contact"><p>Send your message</p></a>
+                          
                     </div>
                 </div>
             </div>
@@ -227,46 +230,55 @@
         
         <footer>
             <div class="footer">
-
-                <div class="contact-us">
-                    <h3>Contact <span>info</span></h3>
-                    <i class="fa-solid fa-phone"></i><h4>Telefone</h4>
-                    <p>(000) 123 456 78- (000) 123 4567 89</p>
-                    <i class="fa-solid fa-location-dot"></i><h4>Address</h4>
-                    <p>2046 Blue Spruce Lane Laurel Canada</p>
-                    <i class="fa-solid fa-envelope"></i><h4>E mail</h4>
-                    <p>rest@gmail.com - rest@mail.ru</p>
+                <h3 id="tablet">Contact <span>info</span></h3>
+                <div class="contact-us">                    
+                    <h3 id="desktop">Contact <span>info</span></h3>
+                    <div>
+                        <i class="fa-solid fa-phone"></i><h4>Telefone</h4>
+                        <p>(000) 123 456 78- (000) 123 4567 89</p>
+                    </div>    
+                    <div>   
+                        <i class="fa-solid fa-location-dot"></i><h4>Address</h4>
+                        <p>2046 Blue Spruce Lane Laurel Canada</p>
+                    </div> 
+                    <div> 
+                        <i class="fa-solid fa-envelope"></i><h4>E mail</h4>
+                        <p>rest@gmail.com - rest@mail.ru</p>
+                    </div>     
                 </div>
 
                 <div class="blog-posts">
-                    <h3>Latest <span>Blog Posts</span></h3>
-                    <h4>Nov 9-2014</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit.
-                        Curabitur ut blandit sapien</p>
-                    <h4>Sep 8-2014</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit.
-                        Curabitur ut blandit sapien</p>
+                    <div>
+                        <h3>Latest <span>Blog Posts</span></h3>
+                        <h4>Nov 9-2014</h4>
+                        <p id="desc_1">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                            Curabitur ut blandit sapien</p>
+                        <h4>Sep 8-2014</h4>
+                        <p id="desc_2">Lorem ipsum dolor sit amet, consectetur adip iscing elit.
+                            Curabitur ut blandit sapien</p>
+                    </div>        
                 </div>
 
                 <div class="photo-stream">
-                    <h3>Photo <span>Stream</span></h3>
-                    <div id="images">
-                        <img src="/assets/images/photo/photo-1.jpg">
-                        <img src="/assets/images/photo/photo-2.jpg">
-                        <img src="/assets/images/photo/photo-3.jpg">
-                        <img src="/assets/images/photo/photo-4.jpg">
-                    </div>        
-                    <h3><span id="min">Follow</span> <span>Us</span></h3>
-                    <i class="lni lni-facebook-oval"></i>
-                    <i class="lni lni-facebook-oval"></i>
-                    <i class="lni lni-basketball"></i>
-                    <i class="lni lni-behance-original"></i>
+                    <div>
+                        <h3>Photo <span>Stream</span></h3>
+                        <div id="images">
+                            <img src="/assets/images/photo/photo-1.jpg">
+                            <img src="/assets/images/photo/photo-2.jpg">
+                            <img src="/assets/images/photo/photo-3.jpg">
+                            <img src="/assets/images/photo/photo-4.jpg">
+                        </div>        
+                        <h3><span id="min">Follow</span> <span>Us</span></h3>
+                        <i class="lni lni-facebook-oval"></i>
+                        <i class="lni lni-facebook-oval"></i>
+                        <i class="lni lni-basketball"></i>
+                        <i class="lni lni-behance-original"></i>
+                    </div>
                 </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <span>Themefisher</span></p>
 
-                <div class="copyright">
-                    <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <br><span>Themefisher</span></p>
-
-                </div>
             </div>
         </footer>
 
