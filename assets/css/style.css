@@ -1,5 +1,52 @@
 
 
+section .menu{
+    padding: 4.3em 0em;
+    display:block;
+    
+}
+
+.titlemenu{
+    text-align: center;
+    font-weight: 500;
+    color: #2E2E2E;
+    padding:2,5em 0em;
+    position:relative;
+    font-size: 36px;
+   
+}
+.titlemenu span{
+    color: #FF530A;
+    font-size: 45px;
+
+}
+
+button{
+    color: #FF530A;
+}
+span{
+    color: #FF530A;
+    font-size: 36px;
+}
+.moreinfo{
+    visibility: visible;
+    animation-duration: 500ms;
+    animation-delay: 1200ms;
+    animation-name: bounceIn;
+    padding: 6px-12px;
+    border-radius: 0px;
+    background: none;
+    color: #FF530A;
+    border: 1px solid #FF530A;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s all;
+    flex-direction: right;
+    display: inline-block;
+}
+
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -94,6 +141,7 @@ input#menu_button:checked ~ nav {
     }
 }
 
+
 @font-face {
     font-family: my_font;
     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
@@ -104,10 +152,12 @@ input#menu_button:checked ~ nav {
 .container, .footer {
     font-family: my_font;
 }
-.container {
-    background-image: url(/assets/images/subscribe-bg.jpg), url(/assets/images/overlay-pattern.png);
-    
-    background-repeat: no-repeat, no-repeat;
+.tomato_container {
+    background-image: url(/assets/images/subscribe-bg.jpg);
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ------ Newsletter ------ */
