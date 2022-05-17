@@ -271,14 +271,14 @@ input#menu_button:checked ~ nav {
 /* ---------- Main (Newsletter-Form) ------------ */
 
 .tomato_container {
-    background: url(/assets/images/subscribe-bg.jpg);
+    background: url(../images/subscribe-bg.jpg);
     background-position: left;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 .second_layer {
-    background: url(/assets/images/overlay-pattern2.png);
+    background: url(../images/overlay-pattern2.png);
     background-attachment: fixed; 
 }
 .third_layer {
