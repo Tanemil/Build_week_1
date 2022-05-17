@@ -402,7 +402,7 @@ footer h3 span {
 
 /* --------------- Blog ---------------- */
 
-.backgound_container h4#titolo_blog{
+.backgound_container h1#titolo_blog{
     padding: 7rem 0 3rem 0;
     text-align: center;
     color: white;
@@ -455,7 +455,7 @@ section.backgound_container div div div{
     width: 100%;
 }
 
-section.backgound_container div div div h4 , section div div div p{
+section.backgound_container div div div h1 , section div div div p{
     padding: 1rem 0;
     box-sizing: border-box;
 }
@@ -476,7 +476,7 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:767px) {
-    .backgound_container h4#titolo_blog {
+    .backgound_container h1#titolo_blog {
         font-size: 2.2rem;
     }
     .backgound_container strong{
@@ -546,9 +546,23 @@ section.backgound_container button a{
         max-width: 58rem;
         margin: 0 auto;
         padding-bottom: 6rem;
+        justify-content:right;
     }
     section.backgound_container button{
         display: block;
-        
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1200px){
+    section.backgound_container div.blog_container{
+        max-width: 72rem;
+        height: 100%;
+    }
+    section.backgound_container div.button_container_blog{
+        max-width: 72rem; 
+    }
+    section.backgound_container button{
+        width: 18rem;
     }
 }
