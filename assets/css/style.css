@@ -1,4 +1,4 @@
-body h1, h2, h3, h4, p {
+body h1, h2, h3, h4, p, input, button {
     font-family: my_font;
     color: #2E2E2E;
 }
@@ -17,7 +17,7 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    text-align: left;
+    
     font-weight: bold;
     font-size: 1.1em;
     line-height: 4em;
@@ -168,6 +168,7 @@ input#menu_button:checked ~ nav {
 /* SLIDER Img */
 
 
+
 .container_First {
     justify-content: space-between;
     align-items: center;
@@ -176,8 +177,8 @@ input#menu_button:checked ~ nav {
 }
 
 .container_First span {
-    color: #eb5b23;
-    
+    color: #FF530A;
+    font-size: 1.3rem;
 }
 
 .container_First h3 {
@@ -187,43 +188,47 @@ input#menu_button:checked ~ nav {
 
 .scroll-images {
     width: 100%;
-    height: 160px;
+    height: 170px;
     display: flex;
     justify-content:start;
     overflow: auto;
     scroll-behavior: smooth;
     align-items: center;
+    background-position: center;
+    margin-top: 70px;
+    background-size: cover;
     
 }
 
 .div-images {
-    min-width: 300px;
-    height: 200px;
+    min-width: 250px;
+    height: 150px;
     margin: 10px 0px;
     cursor: pointer;
     border-radius: 3px;
     overflow: hidden;
-    margin-top: 70px;
+    
 }
 
 .child-img {
     width: 100%;
     height: 100%;
+   
 }
 
 .container-scroll {
     display: inline-block;
     margin-left: 50%;
     transform: translate(-50%);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .dot {
     display:inline-block;
-    width: 3px;
+    width: 1px;
     height: 12px;
-    border-radius: 50%;
+    border-radius: 100%;
     border-style: none;
     margin: 0 auto;
     background-color: grey;
@@ -236,41 +241,116 @@ input#menu_button:checked ~ nav {
     background-color: #eb5b23;
 }
 
+/* SLIDER PART 2 */
+
+.container-chef {
+     background-color: rgb(246, 246, 246);
+     width: 100%;
+     margin-left: -5%;
+     text-align: center;
+}
+
+.img-chef {
+    margin-top: 70px;
+    
+    
+}
+
+.container-chef h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: my_font;
+    
+    
+}
+
+.container-chef span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FF530A;
+}
+
+.container-chef hr {
+    margin-bottom: 40px;
+    margin-top: 45px;
+    color: rgb(247, 247, 247);
+}
+
+.container-chef p {
+    font-size: 1.0em;
+    line-height: 1.7;
+    padding-bottom: 70px;
+}
+
+
+
 /* ---------- Main (Newsletter-Form) ------------ */
 
-.container, .footer {
-    font-family: my_font;
-}
 .tomato_container {
-    background-image: url(/assets/images/subscribe-bg.jpg);
-    background-position: center;
+    background: url(../images/subscribe-bg.jpg);
+    background-position: left;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
 }
+.second_layer {
+    background: url(../images/overlay-pattern2.png);
+    background-attachment: fixed; 
+}
+.third_layer {
+    background-color: rgba(79, 79, 79, 0.199);
+    background-attachment: fixed; 
+}
 
 /* ------ Newsletter ------ */
 .newsletter {
-    padding: 100px 20px;
+    padding: 130px 20px;
+    margin-bottom: 75px;
     text-align: center;
     color: white;
     font-weight: bold;
 }
-.newsletter input {
-    width: 90%;
+.newsletter h1 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+.newsletter span {
+    color: #ff550b;
+    text-transform: lowercase;
+    font-size: 0.9em;
 }
 .newsletter hr {
-    border-top: 1px solid #ffffff;
-    border-bottom: none ;
-    margin: 0 12rem;
+    margin-bottom: 25px;
+    width: 30%;
+    background-color: rgb(190, 190, 190);
+    border: 0.5px solid rgb(190, 190, 190);
 }
-
+.newsletter p {
+    color: white;
+    text-shadow: 0.5px 0.5px 0.5px white;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: auto;
+}
+.newsletter input#subscribe {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 1em;
+    width: 95%;
+    opacity: 85%;
+    padding: 25px 10px;
+}
 .newsletter a p {
-    display: inline-block;
+    float: left;
+    width: 30%;
     padding: 20px 50px;
-    background-color: #7ec4bc;
+    background-color: rgb(132, 189, 191);
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.1em;
 }
 .newsletter a:link {
     text-decoration: none;
@@ -278,32 +358,68 @@ input#menu_button:checked ~ nav {
 .newsletter a:visited {
     color: white;
 }
-.newsletter span {
-    color: #ff550b;
+.newsletter a:hover {
+    animation: shadow 2.5s infinite;
+}
+.newsletter a:active {
     
+}
+@keyframes shadow {
+    0% { box-shadow: 0 0 0 5px rgba(132, 189, 191, 1);}
+    25% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.7);}
+    50% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.4);}
+    100% { box-shadow: 0 0 0 0 rgba(132, 189, 191, 0.2);}
 }
 
 /* ------ Form ------ */
 .form {
-    padding: 100px 20px 50px 20px;
+    padding: 100px 20px;
+    background-color: white;
 }
-/* .form h2 {
+.form h1 {
+    margin-bottom: 40px;
+    font-size: 1.3em;
     text-align: center;
     color: #343434;
-} */
-
-/* .form h2 span, .form h3 span {
+}
+.form h1 span {
+    font-size: 1.4em;
     text-transform: uppercase;
     color: #ff550b;
     font-weight: bold;
-} */
+}
+.form hr {
+    margin: auto;
+    width: 35%;
+    background-color: rgb(190, 190, 190);
+    border: 0.5px solid rgb(190, 190, 190);
+}
+.form h3 {
+    margin-top: -10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.form h3 span {
+    text-transform: uppercase;
+    color: #ff550b;
+}
 .form input#name, input#email, input#text  {
-    width: 100%;
-    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1em;
+    width: 95%;
+    opacity: 85%;
+    padding: 20px 10px;
     border: 1px solid lightgrey;
 }
-.form a p[title="msg"] {
-    display: inline-block;
+input#text {
+    padding: 20px 10px 100px 10px;
+}
+.form a p {
+
+    color: white;
+    float: center;
+    text-align: center;
     padding: 20px 50px;
     background-color: #ff550b;
     text-transform: uppercase;
@@ -371,7 +487,7 @@ footer h3 span {
 
 /* --------------- Blog ---------------- */
 
-.backgound_container h4#titolo_blog{
+.backgound_container h1#title_blog{
     padding: 7rem 0 3rem 0;
     text-align: center;
     color: white;
@@ -379,10 +495,14 @@ footer h3 span {
     font-size: 1.4rem;
 }
 
-.backgound_container > hr:first-of-type{
+hr#title_hr{
+    width: 8rem;
+    border-top: none ;
+    border-bottom: 0.1rem solid white;
+    border-top: none;
     margin-bottom: 2.5rem;
-    border-top: 1px solid white;
-    border-bottom: none;
+    border-right: none;
+    border-left: none;
 }
 
 .backgound_container strong{
@@ -393,38 +513,52 @@ footer h3 span {
 
 .backgound_container{
     background-image: url(../images/blog/blog-bg.jpg);
-    background-position: center;
+    background-position: left;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-hr{
-    border-top: 1px solid #959595;
-    border-bottom: none ;
-    margin: 0 12rem;
+section.backgound_container div.backgound_container_overlay1{
+    background-image:url(../images/overlay-pattern.png);
+    background-attachment: fixed;
 }
 
 section.backgound_container div.blog_container{
     text-align: center;
     margin: 0 1rem;
+    border: none;
 }
 
 .blog_container div.box3 , .blog_container div.box4{
     display: flex;
     flex-direction: column-reverse;
+
 }
 
-section.backgound_container div div img{
+section.backgound_container div div div div{
+    box-sizing: border-box;
+}
+
+section.backgound_container div div div div img{
     width: 100%;
+    height: 100%;
+}
+
+section.backgound_container div div div div h4{
+    margin: 1.2rem 0 1rem 0;
+}
+
+section.backgound_container div div div div hr{
+    width: 5rem;
 }
 
 section.backgound_container div div div{
     background-color: white;
-    width: 100%;
+    flex: 1 1 0;
 }
 
-section.backgound_container div div div h4 , section div div div p{
+section.backgound_container div div div h1 , section div div div p{
     padding: 1rem 0;
     box-sizing: border-box;
 }
@@ -445,14 +579,17 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:767px) {
-    .backgound_container h4#titolo_blog {
+    section.backgound_container div div div div.desc_box_1 , section.backgound_container div div div div.desc_box_2 , section.backgound_container div div div div.desc_box_3 , section.backgound_container div div div div.desc_box_4 , section.backgound_container div div div div.desc_box_5 , section.backgound_container div div div div.desc_box_6 {
+        padding: 1rem 2rem;
+    }
+    section.backgound_container div div div div h4{
+        margin: 2.8rem 0 2rem 0;
+    }
+    .backgound_container h1#title_blog {
         font-size: 2.2rem;
     }
     .backgound_container strong{
         font-size: 2.7rem
-    }
-    hr{
-        margin: 0 40%;
     }
     section.backgound_container div.blog_container{
         max-width: 46rem;
@@ -481,11 +618,16 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:991px){
+    section.backgound_container div div img{
+        height: auto;
+    }
     section.backgound_container div.blog_container div.box1 {
         grid-area: box1;
+        
     }
     section.backgound_container div.blog_container div.box2 {
         grid-area: box2;
+        
     }
     section.backgound_container div.blog_container div.box3 {
         grid-area: box3;
@@ -495,6 +637,7 @@ section.backgound_container button a{
     }
     section.backgound_container div.blog_container div.box5 {
         grid-area: box5;
+
     }
     section.backgound_container div.blog_container div.box6 {
         grid-area: box6;
@@ -508,16 +651,33 @@ section.backgound_container button a{
     }
     section.backgound_container div.blog_container{
         max-width: 58rem;
-        height: 58rem;
+        height: 35rem;
     }
     section.backgound_container div.button_container_blog{
         display: flex;
         max-width: 58rem;
         margin: 0 auto;
         padding-bottom: 6rem;
+        justify-content:right;
     }
     section.backgound_container button{
         display: block;
-        
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1200px){
+    section.backgound_container div div img{
+        height: 100%;
+    }
+    section.backgound_container div.blog_container{
+        max-width: 72rem;
+        height: 100%;
+    }
+    section.backgound_container div.button_container_blog{
+        max-width: 72rem; 
+    }
+    section.backgound_container button{
+        width: 18rem;
     }
 }
