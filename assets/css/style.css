@@ -33,10 +33,15 @@ p{
     line-height: 1.5em;
 }
 
-section .menu{
-    padding: 4.3em 0em;
-    display:block;
+.menu{
+    position: relative;
+    padding: 2.4em; 
+    padding-top: 2.5em;
     
+    
+}
+.menu p{
+    line-height: 6em;
 }
 
 .titlemenu{
@@ -48,25 +53,36 @@ section .menu{
    
 }
 
-/* button{
-    color: #FF530A;
-} */
-
-.moreinfo{
+.moreinfor{
     visibility: visible;
-    animation-duration: 500ms;
+   /* animation-duration: 500ms;
     animation-delay: 1200ms;
-    animation-name: bounceIn;
+    animation-name: bounceIn;*/
     padding: 6px 12px;
     border-radius: 0px;
     background: none;
     color: #FF530A;
     border: 1px solid #FF530A;
-    text-transform: uppercase;
+   /* text-transform: uppercase;
     font-weight: 600;
     transition: .3s all;
     flex-direction: right;
-    display: inline-block;
+    display: inline-block;*/
+    margin-left: 50em;
+    height: 4rem;
+    width: 12rem;
+    margin-top: 6em;
+    position:sticky;
+    
+
+}
+.price1{
+    position: relative;
+    /*border-style: dotted;*/
+
+}
+.price{
+    color: #959595;
 }
 
 
