@@ -229,7 +229,7 @@ input#menu_button:checked ~ nav {
 
 .container-chef {
      background-color: rgb(246, 246, 246);
-     width: 110%;
+     width: 100%;
      margin-left: -5%;
      text-align: center;
 }
@@ -402,7 +402,7 @@ footer h3 span {
 
 /* --------------- Blog ---------------- */
 
-.backgound_container h1#titolo_blog{
+.backgound_container h1#title_blog{
     padding: 7rem 0 3rem 0;
     text-align: center;
     color: white;
@@ -410,10 +410,14 @@ footer h3 span {
     font-size: 1.4rem;
 }
 
-.backgound_container > hr:first-of-type{
+hr#title_hr{
+    width: 8rem;
+    border-top: none ;
+    border-bottom: 0.1rem solid white;
+    border-top: none;
     margin-bottom: 2.5rem;
-    border-top: 1px solid white;
-    border-bottom: none;
+    border-right: none;
+    border-left: none;
 }
 
 .backgound_container strong{
@@ -424,35 +428,48 @@ footer h3 span {
 
 .backgound_container{
     background-image: url(../images/blog/blog-bg.jpg);
-    background-position: center;
+    background-position: left;
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-hr{
-    border-top: 1px solid #959595;
-    border-bottom: none ;
-    margin: 0 12rem;
+section.backgound_container div.backgound_container_overlay1{
+    background-image:url(../images/overlay-pattern.png);
+    background-attachment: fixed;
 }
 
 section.backgound_container div.blog_container{
     text-align: center;
     margin: 0 1rem;
+    border: none;
 }
 
 .blog_container div.box3 , .blog_container div.box4{
     display: flex;
     flex-direction: column-reverse;
+
 }
 
-section.backgound_container div div img{
+section.backgound_container div div div div{
+    box-sizing: border-box;
+}
+
+section.backgound_container div div div div img{
     width: 100%;
+}
+
+section.backgound_container div div div div h4{
+    margin: 1.2rem 0 1rem 0;
+}
+
+section.backgound_container div div div div hr{
+    width: 5rem;
 }
 
 section.backgound_container div div div{
     background-color: white;
-    width: 100%;
+    flex: 1 1 0;
 }
 
 section.backgound_container div div div h1 , section div div div p{
@@ -476,14 +493,17 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:767px) {
-    .backgound_container h1#titolo_blog {
+    section.backgound_container div div div div.desc_box_1 , section.backgound_container div div div div.desc_box_2 , section.backgound_container div div div div.desc_box_3 , section.backgound_container div div div div.desc_box_4 , section.backgound_container div div div div.desc_box_5 , section.backgound_container div div div div.desc_box_6 {
+        padding: 1rem 2rem;
+    }
+    section.backgound_container div div div div h4{
+        margin: 2.8rem 0 2rem 0;
+    }
+    .backgound_container h1#title_blog {
         font-size: 2.2rem;
     }
     .backgound_container strong{
         font-size: 2.7rem
-    }
-    .backgound_container hr{
-        margin: 0 40%;
     }
     section.backgound_container div.blog_container{
         max-width: 46rem;
@@ -512,6 +532,9 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:991px){
+    section.backgound_container div div img{
+        height: auto;
+    }
     section.backgound_container div.blog_container div.box1 {
         grid-area: box1;
     }
@@ -555,6 +578,9 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:1200px){
+    section.backgound_container div div img{
+        height: 100%;
+    }
     section.backgound_container div.blog_container{
         max-width: 72rem;
         height: 100%;
