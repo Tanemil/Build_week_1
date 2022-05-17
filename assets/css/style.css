@@ -521,12 +521,20 @@ section.backgound_container div.blog_container{
 }
 
 section.backgound_container div div div div{
-    box-sizing: border-box;
+    position:relative;
+    overflow: hidden;
 }
 
 section.backgound_container div div div div img{
     width: 100%;
     height: 100%;
+    transform: rotate(0deg) scale(1);
+    transition: 0.65s ease-out;
+}
+
+section.backgound_container div div div div img:hover{
+    transform: rotate(10deg) scale(1.2);
+    transition: 0.65s ease-in;
 }
 
 section.backgound_container div div div div h4{
@@ -564,7 +572,7 @@ section.backgound_container button a{
 
 @media screen and (min-width:767px) {
     section.backgound_container div div div div.desc_box_1 , section.backgound_container div div div div.desc_box_2 , section.backgound_container div div div div.desc_box_3 , section.backgound_container div div div div.desc_box_4 , section.backgound_container div div div div.desc_box_5 , section.backgound_container div div div div.desc_box_6 {
-        padding: 1rem 2rem;
+        flex: 1 1 0;
     }
     section.backgound_container div div div div h4{
         margin: 2.8rem 0 2rem 0;
@@ -602,16 +610,21 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:991px){
-    section.backgound_container div div img{
+    section.backgound_container div div div div img{
         height: auto;
+    }
+    section.backgound_container div div div div h4{
+        padding: 0 5rem;
+    }
+    section.backgound_container div div div div p{
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
     }
     section.backgound_container div.blog_container div.box1 {
         grid-area: box1;
-        
     }
     section.backgound_container div.blog_container div.box2 {
-        grid-area: box2;
-        
+        grid-area: box2; 
     }
     section.backgound_container div.blog_container div.box3 {
         grid-area: box3;
@@ -621,7 +634,6 @@ section.backgound_container button a{
     }
     section.backgound_container div.blog_container div.box5 {
         grid-area: box5;
-
     }
     section.backgound_container div.blog_container div.box6 {
         grid-area: box6;
@@ -632,10 +644,10 @@ section.backgound_container button a{
         'box1 box2'
         'box3 box4'
         'box5 box6';
+        grid-template-rows: auto 16rem auto;
     }
     section.backgound_container div.blog_container{
         max-width: 58rem;
-        height: 35rem;
     }
     section.backgound_container div.button_container_blog{
         display: flex;
@@ -647,12 +659,17 @@ section.backgound_container button a{
     section.backgound_container button{
         display: block;
         margin: 0;
+        width: 18rem;
     }
 }
 
 @media screen and (min-width:1200px){
-    section.backgound_container div div img{
+    section.backgound_container div.blog_container{
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    section.backgound_container div div div div img{
         height: 100%;
+        width: 100%;
     }
     section.backgound_container div.blog_container{
         max-width: 72rem;
