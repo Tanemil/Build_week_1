@@ -36,6 +36,33 @@ p{
     position:absolute;
 }
 
+div.container_background_header{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 38vw;
+    margin-bottom: -3.8rem;
+}
+div.container_background_header div.overlay_oscurante{
+    background-color: rgba(0, 0, 0, 0.250);
+    width: 100%;
+    height: 100%;
+}
+
+div div div.header_overlay{
+    background: url(../images/overlay-pattern.png);
+    width: 100%;
+    height: 100%;
+}
+
+ header {
+     background-color: rgba(129, 122, 122, 0.19);
+ }
+ 
+
+.logo{
+    float: left;
+}
 .menu{
     position: relative;
     padding: 50px ; 
@@ -153,7 +180,7 @@ div .moreinfor button:hover{
     transition: .3s all;
     flex-direction: right;
     display: inline-block;
-    float:right;
+    float: right;
     
     
 
@@ -175,14 +202,13 @@ h2 .menu{
 }
 
 header {
-    
-    padding: 1em;
     position: sticky;
+    padding: 1em;
     top: 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    z-index: 10;
 }
 
 header div {
@@ -192,9 +218,16 @@ header div {
 
 }
 
+a{
+color: #2E2E2E;
+text-decoration: none;
+
+}
+
 
 input#menu_button {
     display: none;
+    
 }
 
 input#menu_button:checked ~ nav {
@@ -219,6 +252,7 @@ input#menu_button:checked ~ nav {
 
     #menu_mobile {
         display: none;
+       
         
     }
 
@@ -234,7 +268,8 @@ input#menu_button:checked ~ nav {
 
     header nav ul li a {
         text-decoration: none;
-        color: grey;
+        color: 
+        #2E2E2E;
         
 
     }
@@ -305,7 +340,7 @@ input#menu_button:checked ~ nav {
     margin-bottom: 45px;
 }
 
-.dot {
+.dot-scroll {
     display:inline-block;
     width: 1px;
     height: 12px;
@@ -327,8 +362,10 @@ input#menu_button:checked ~ nav {
 .container-chef {
      background-color: rgb(246, 246, 246);
      width: 100%;
-     margin-left: -5%;
      text-align: center;
+     margin-left: -3%;
+     padding-right: 6%;
+     
 }
 
 .img-chef {
@@ -354,7 +391,8 @@ input#menu_button:checked ~ nav {
 .container-chef hr {
     margin-bottom: 40px;
     margin-top: 45px;
-    color: rgb(247, 247, 247);
+    color:rgb(247, 247, 247);
+    width: 25%;
 }
 
 .container-chef p {
