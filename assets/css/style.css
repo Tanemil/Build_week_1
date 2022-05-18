@@ -38,62 +38,6 @@ p{
 
 
 
-/* header{
-=======
-div.container_background_header{
-
-    background-image: url(../images/header.jpg);
-    width: 100%;
-    height: 38vw;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-div.container_background_header div.overlay_oscurante{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/overlay-pattern.png)
-}
-body div div div.header_overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
-}
- */
-
- header {
-     background-color: rgba(129, 122, 122, 0.19);
- }
- 
-
-.logo{
-    float: left;
-}
-.menu{
-    position: relative;
-    padding: 2.4em; 
-    padding-top: 2.5em;
-    line-height: 4em;
-    width: 0 auto;
-    
-    
-}
-.menu p{
-    line-height: 2em;
-}
-
-.titlemenu{
-    text-align: center;
-    font-weight: 500;
-    color: #2E2E2E;
-    padding:2,5em 0em;
-    position:relative;
-   
-}
-/*.dot{
-    border-bottom: 2px dotted;
-}*/
-
 .moreinfor{
     visibility: visible;
    animation-duration: 500ms;
@@ -108,7 +52,6 @@ body div div div.header_overlay{
     font-weight: 600;
     transition: .3s all;
     flex-direction: right;
-    display: inline-block;
     float: right;
     
     
@@ -131,13 +74,13 @@ body div div div.header_overlay{
 }
 
 header {
+    background-color: rgba(129, 122, 122, 0.19);
     position: sticky;
     padding: 1em;
     top: 0;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    bottom: 0;
     z-index: 10;
 }
 
