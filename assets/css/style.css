@@ -150,18 +150,8 @@ text-decoration: none;
 
 }
 
-.lni {
-    float: right;
-    font: normal normal normal 3em/1 'LineIcons';
-    color: red;
-    /* flex-shrink: 0;
-    speak: none;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -0.125em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
-}
+
+
 input#menu_button {
     display: none;
     
