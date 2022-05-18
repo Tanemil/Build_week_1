@@ -12,26 +12,32 @@
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
 <body>
-       
-    <header>
-     
-        <div>
-            <a href="index.html" title="Homepage">
-                <img src= "./assets/images/logo.png" alt="logo">
-            </a>
+    <div class="container_background_header">
+        <div class="header_overlay">
+            <div class="overlay_oscurante">
+
+            </div>
         </div>
-        <label for="menu_button" id="menu_mobile"><i class="lni lni-menu"></i></label>
-        <input type="checkbox" id="menu_button">
-        <nav class="navigation_bar">
-            <ul>
-                <li><a href="" title="Homepage">HOME</a></li>
-                <li><a href="" title="Chi Siamo">ABOUT US</a></li>
-                <li><a href="" title="blog">BLOG</a></li>
-                <li><a href="" title="menu">MENU</a></li>
-                <li><a href="" title="news">NEWS</a></li>
-                <li><a href="" title="contacts">CONTACTS</a></li>
-            </ul>
-        </nav>
+    </div>
+    <header>
+           
+            <div id="logo">
+                <a href="index.html" title="Homepage">
+                    <img src= "./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <label for="menu_button" id="menu_mobile"><i class="lni lni-menu"></i></i></label>
+            <input type="checkbox" id="menu_button">
+            <nav class="navigation_bar">
+                <ul>
+                    <li><a href="" title="Homepage">HOME</a></li>
+                    <li><a href="" title="Chi Siamo">ABOUT US</a></li>
+                    <li><a href="" title="blog">BLOG</a></li>
+                    <li><a href="" title="menu">MENU</a></li>
+                    <li><a href="" title="news">NEWS</a></li>
+                    <li><a href="" title="contacts">CONTACTS</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <section>
@@ -47,18 +53,18 @@
                   
                 </div>
              
-                <div class="container-scroll">
-                  <button class="dot"></button>
-                  <button class="dot"></button>
-                  <button class="dot"></button>
-                  <button class="dot"></button>
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
                   
                 </div>
         
               </div>
       
               <div class="container-chef">
-                 <img class="img-chef" src="/assets/images/cooker-img.png">
+                 <img class="img-chef" src="assets/images/cooker-img.png">
                  <h3>Your <span>Restaurant's</span><br> Website Has To Look <span>Good</span></h3>
                  <hr>
                  <p>
@@ -78,6 +84,7 @@
                     <div class="box1">
                         <div class="box_img_1">
                             <img src="assets/images/blog/blog-img-1.jpg" alt="blog_1">
+                            <div class="filler"></div>
                         </div>
                         <div class="desc_box_1">
                             <h4>Homestyle Chicken Pot Pie</h4>
@@ -88,6 +95,7 @@
                     <div class="box2">
                         <div class="box_img_2">
                             <img src="assets/images/blog/blog-img-2.jpg" alt="blog_2">
+                            <div class="filler"></div>
                         </div>
                         <div class="desc_box_2">
                             <h4>Homestyle Chicken Pot Pie</h4>
@@ -98,6 +106,7 @@
                     <div class="box3">
                         <div class="box_img_3">
                             <img src="assets/images/blog/blog-img-3.jpg" alt="blog_3">
+                            <div class="filler"></div>
                         </div>
                         <div class="desc_box_3">
                             <h4>Homestyle Chicken Pot Pie</h4>
@@ -108,6 +117,7 @@
                     <div class="box4">
                         <div class="box_img_4">
                             <img src="assets/images/blog/blog-img-4.jpg" alt="blog_4">
+                            <div class="filler"></div>
                         </div>
                         <div class="desc_box_4">
                             <h4>Homestyle Chicken Pot Pie</h4>
@@ -118,6 +128,7 @@
                     <div class="box5">
                         <div class="box_img_5">
                             <img src="assets/images/blog/blog-img-5.jpg" alt="blog_5">
+                            <div class="filler"></div>
                         </div>
                         <div class="desc_box_5">
                             <h4>Homestyle Chicken Pot Pie</h4>
@@ -128,6 +139,7 @@
                     <div class="box6">
                         <div class="box_img_6">
                             <img src="assets/images/blog/blog-img-6.jpg" alt="blog_6">
+                            <div class="filler"></div>
                         </div>
                         <div class="desc_box_6">
                             <h4>Homestyle Chicken Pot Pie</h4>
@@ -142,51 +154,89 @@
             </div>
         </section>
         <section class="menu">
-            <div class="titlemenu"></div>
-            <h1> our <span>MENU</span> the <span>PRICE</span></h1>
-               <!-- <strong class="">MENU</strong>the  <strong>PRICE</strong></h1>-->
+            <div class="menu1">
+                <div class="titlemenu">
+                    <h2>our <span>MENU</span> the <span>PRICE</span></h2>
+                    <hr class="line">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullmaco</p>
+
+                </div>
+                <div class="listmenu">
+                    <h2>FEATURED <span class="week">ON THE WEEK</span></h2>
+                    <ul>
+                        <li>
+                            <div class="objectlist">
+                                <div class="namefood">
+                                    <h4>Pancakes n's Such </h4>
+                                    <div class="dotted"> </div>
+                                    <span class="price2">$25.00</span>
+                                </div>
+                            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="objectlist">
+                                <div class="namefood">
+                                    <h4>Homestyle Chicken Pot Pie</h4>
+                                    <div class="dotted"></div>
+                                    <span class="price2">$10.00</span>
+                                </div>
+                            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="objectlist">
+                                <div class="namefood">
+                                    <h4>Cereal, Panecillos y Frutas</h4>
+                                    <div class="dotted"></div>
+                                    <span class="price2">$5.00</span>
+                                </div>
+                            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="objectlist">
+                                <div class="namefood">
+                                    <h4>Meat of Skewers</h4>
+                                    <div class="dotted"></div>
+                                    <span class="price2">$15.00</span>
+                                </div>
+                            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                            </div>
+                        </li>
+                        <li>
+                        <div class="objectlist">
+                            <div class="namefood">
+                                <h4>Steak with a Garlic and Parsley Risotto</h4>
+                                <div class="dotted"></div>
+                                <span class="price2">$75.00</span>
+                            </div>
+                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="objectlist">
+                            <div class="namefood">
+                                <h4>Cesar Salad</h4>
+                                <div class="dotted"></div>
+                                <span class="price2">$7.00</span>
+                            </div>
+                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
+                        </div>
+                    
+                    </li>
+                    </ul>
+                </div>
             </div>
-            <hr class="line">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullmaco</p>
-
-            <h2>FEATURED <span>ON THE WEEK</span></h2>
-            
-            <h2>Pancakes n'Such<span>&25.00</span></h2>
-            <!--<h2>$ 25.00</h2>-->
-            <!-- <div class="price">
-                <h2>Pancakes n'Such</h2>
-                <div class="price1"></div>
-                <span>$25.00</span>
-                <p>......</p>
-            </div>-->
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-            
-
-            
-            <h2>Homestyle Chicken Pot Pie<span>$10.00</span></h2>
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-            
-            
-            <h2>Cereal, Panecillos y Frutas</h2>
-            <h2>$5.00</h2>
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-    
-            
-            <h2>Meat of Skewers<span class="price"></span></h2>
-            <h2>$15.00</h2>
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-             
-            <h2>Steak with Garlic and Parsley Risotto<span class="price">$75.00</span></h2>
-            <h2>$75.00</h2>
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-             
-            <h2>Cesar Salad</h2>
-            <h2>$7.00</h2>
-            <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmond tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-            
-
            
-            <button type="button" class="moreinfor">MORE INFO</button>
+
+            <div class="moreinfor">
+                <a href="#" target="blank">
+                    <button type="button" value="moreinfo">MORE INFO</button>
+                </a>
+            </div>
+            
         
         </section>
 
@@ -262,10 +312,10 @@
                     <div>
                         <h3>Photo <span>Stream</span></h3>
                         <div id="images">
-                            <img src="/assets/images/photo/photo-1.jpg">
-                            <img src="/assets/images/photo/photo-2.jpg">
-                            <img src="/assets/images/photo/photo-3.jpg">
-                            <img src="/assets/images/photo/photo-4.jpg">
+                            <img src="assets/images/photo/photo-1.jpg">
+                            <img src="assets/images/photo/photo-2.jpg">
+                            <img src="assets/images/photo/photo-3.jpg">
+                            <img src="assets/images/photo/photo-4.jpg">
                         </div>        
                         <h3><span id="min">Follow</span> <span>Us</span></h3>
                         <i class="lni lni-facebook-oval"></i>
