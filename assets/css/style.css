@@ -114,6 +114,11 @@ header div {
 
 
 }
+a{
+color: #2E2E2E;
+text-decoration: none;
+
+}
 
 
 input#menu_button {
@@ -142,6 +147,7 @@ input#menu_button:checked ~ nav {
 
     #menu_mobile {
         display: none;
+       
         
     }
 
