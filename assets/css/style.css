@@ -132,8 +132,8 @@ hr.line{
     font-weight: 600;
 }
 .moreinfor button:hover{
-    background-color: #FF530A;
-    color: #ffffff;
+    background-color:#ffffff;
+    color: #FF530A;
     cursor: pointer;
 }
 
