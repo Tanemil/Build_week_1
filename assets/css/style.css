@@ -83,7 +83,7 @@ header{
     transition: .3s all;
     flex-direction: right;
     display: inline-block;
-    float:right;
+    float: right;
     
     
 
@@ -263,7 +263,9 @@ input#menu_button:checked ~ nav {
      background-color: rgb(246, 246, 246);
      width: 100%;
      text-align: center;
-     left: 0;
+     margin-left: -3%;
+     padding-right: 6%;
+     
 }
 
 .img-chef {
