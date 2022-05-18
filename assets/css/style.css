@@ -289,8 +289,9 @@ input#menu_button:checked ~ nav {
 
 .container-chef h3 {
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 300;
     font-family: my_font;
+    line-height: 1.3;
     
     
 }
@@ -303,7 +304,7 @@ input#menu_button:checked ~ nav {
 
 .container-chef hr {
     margin-bottom: 40px;
-    margin-top: 45px;
+    margin-top: 25px;
     color:rgb(247, 247, 247);
     width: 25%;
 }
@@ -312,6 +313,7 @@ input#menu_button:checked ~ nav {
     font-size: 1.0em;
     line-height: 1.7;
     padding-bottom: 70px;
+    
 }
 
 
