@@ -55,58 +55,74 @@ div div div.header_overlay{
 }
 .menu{
     position: relative;
-    padding: 2.4em; 
+    padding-right: 8em;
+    padding-left: 8em;
+    height: 89em;
+    
     padding-top: 2.5em;
     line-height: 4em;
     width: 0 auto;
     
     
 }
+.titlemenu h2{
+    text-align: center;
+}
+.listmenu h2{
+    font-size: 27px;
+}
 .menu p{
     line-height: 2em;
 }
 
 .titlemenu{
-    text-align: center;
+    text-align:center;
     font-weight: 500;
     color: #2E2E2E;
-    padding:2,5em 0em;
+    padding:40px 0px;
     position:relative;
    
 }
-/*.dot{
-    border-bottom: 2px dotted;
-}*/
-
-
-.moreinfor{
-    visibility: visible;
-   animation-duration: 500ms;
-    animation-delay: 1200ms;
-    animation-name: bounceIn;
-    padding: 6px 12px;
-    border-radius: 0px;
-    background: none;
+.listmenu li{
+    list-style-type: none;
+}
+.titlemenu span{
     color: #FF530A;
-    border: 1px solid #FF530A;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: .3s all;
-    flex-direction: right;
+}
+.listmenu span.week{
+    color: #FF530A;
+}
+
+hr.line{
+    width: 20rem;
+    border-top: none ;
+    border-bottom: 0.1rem solid #959595;
+    border-top: none;
+    margin-bottom: 2.5rem;
+    border-right: none;
+    border-left: none;
+}
+
+.moreinfor button{
+    border:1px solid #FF530A;
+    color: #FF530A;
+    height: 5rem;
+    width:18rem;
+    font-weight: bold;
     float: right;
-    
-    
-
+    font-size: 15px;
+    text-transform: uppercase;
+    animation-duration: 500ms;
+    animation-delay: 1200ms;
+    transition: .3s all;
+    padding:28px 105px;
+    font-weight: 600;
 }
-.price1{
-    position: relative;
-    /*border-style: dotted;*/
-
+.moreinfor button:hover{
+    background-color: #FF530A;
+    color: #ffffff;
+    cursor: pointer;
 }
-/*h2 .menu{
-    color: #959595;
-}*/
-
 
 .container {
     width: 80%;
@@ -666,12 +682,12 @@ section.backgound_container button a{
     }
 
     div.listmenu ul li div div div.dotted{
-        height: 2rem;
-        width: 2rem;
-        border: 1px dotted #959595;
+        height: 1rem;
+        width: 100%;
+        border-bottom:  1px dotted #959595;
         margin-top: 20px;
-        position: relative;
-        background-color: #FF530A;
+        position: absolute;
+        top: 0;
     }
 
     .newsletter {
