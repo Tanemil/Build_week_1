@@ -812,7 +812,6 @@ section.backgound_container button a{
     }
     .box_img_1 , .box_img_2 , .box_img_3 , .box_img_4 , .box_img_5 , .box_img_6{
         width: 100%;
-        height: 100%;
         background-color: white;
     }
     .blog_container div.box1 , .blog_container div.box2 , .blog_container div.box3 ,.blog_container div.box4 ,.blog_container div.box5 , .blog_container div.box6 {
