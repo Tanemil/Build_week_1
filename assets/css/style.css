@@ -40,7 +40,7 @@ p{
 div.container_background_header{
     background-image: url(../images/header.jpg);
     width: 100%;
-    height: 38vh;
+    height: 38vw;
     background-size: cover;
     margin-bottom: -3.8rem;
 }
