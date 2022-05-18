@@ -363,9 +363,9 @@ input#menu_button:checked ~ nav {
 .newsletter a:hover {
     animation: shadow 2.5s infinite;
 }
-.newsletter a:active {
+/* .newsletter a:active {
     
-}
+} */
 @keyframes shadow {
     0% { box-shadow: 0 0 0 5px rgba(132, 189, 191, 1);}
     25% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.7);}
