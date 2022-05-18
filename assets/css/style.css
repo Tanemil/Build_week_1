@@ -36,11 +36,23 @@ p{
     position:absolute;
 }
 
-header{
+div.container_background_header{
     background-image: url(../images/header.jpg);
-    background-position: center ;
-    background-size: cover;
-    height: 10rem;
+    width: 100%;
+    height: 38vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.container_background_header div.overlay_oscurante{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/overlay-pattern.png)
+}
+body div div div.header_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .menu{
@@ -111,7 +123,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    bottom: 0;
 }
 
 header div {
