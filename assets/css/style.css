@@ -25,11 +25,20 @@ h4{
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+@keyframes animazione_p {
+    0% {opacity: 0}
+    50% { opacity: 0.5; }
+    100%{ opacity: 1;}
+}
+
+
 p{
     font-size: 0.9rem;
     color: #959595;
     margin: 0 2rem;
     line-height: 1.5em;
+    animation: animazione_p 1s ease-in ;
 }
 .dot{
     border-bottom: #959595 dotted;
