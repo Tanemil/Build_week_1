@@ -36,6 +36,13 @@ p{
     position:absolute;
 }
 
+header{
+    background-image: url(../images/header.jpg);
+    background-position: center ;
+    background-size: cover;
+    height: 10rem;
+}
+
 .menu{
     position: relative;
     padding: 2.4em; 
@@ -98,9 +105,8 @@ p{
 }
 
 header {
-    
-    padding: 1em;
     position: sticky;
+    padding: 1em;
     top: 0;
     display: flex;
     justify-content: space-between;
