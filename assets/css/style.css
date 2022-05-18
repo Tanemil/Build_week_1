@@ -204,7 +204,7 @@ input#menu_button:checked ~ nav {
     width: 100%;
     height: 170px;
     display: flex;
-    justify-content:start;
+    justify-content:center;
     overflow: auto;
     scroll-behavior: smooth;
     align-items: center;
@@ -230,16 +230,10 @@ input#menu_button:checked ~ nav {
    
 }
 
-.container-scroll {
-    display: inline-block;
-    margin-left: 50%;
-    transform: translate(-50%);
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
 
-.dot-scroll {
-    display:inline-block;
+.navigation-manual {
+    display:flex;
+    justify-content: center;
     width: 1px;
     height: 12px;
     border-radius: 100%;
@@ -248,12 +242,28 @@ input#menu_button:checked ~ nav {
     background-color: grey;
     cursor: pointer;
     
-
 }
 
-.dot:hover {
-    background-color: #eb5b23;
+.manual-btn {
+    border: 2px solid #FF530A;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+.manual-btn:not(:last-child) {
+    margin-right: 7px;
+}
+
+.manual-btn:hover{
+    background-color: #FF530A;
+}
+
+
+
+
 
 /* SLIDER PART 2 */
 
@@ -263,6 +273,7 @@ input#menu_button:checked ~ nav {
      text-align: center;
      margin-left: -3%;
      padding-right: 6%;
+     margin-top: 50px;
      
 }
 
@@ -300,6 +311,8 @@ input#menu_button:checked ~ nav {
     padding-bottom: 70px;
     
 }
+
+
 
 
 
