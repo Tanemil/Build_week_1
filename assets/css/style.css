@@ -36,18 +36,8 @@ p{
     position:absolute;
 }
 
-div.container_background_header{
-    background-image: url(../images/header.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 38vw;
-    margin-bottom: -3.8rem;
-}
-div.container_background_header div.overlay_oscurante{
-    background-color: rgba(0, 0, 0, 0.250);
-    width: 100%;
-    height: 100%;
-}
+
+
 
 div div div.header_overlay{
     background-image: url(/assets/images/overlay-pattern.png);
@@ -88,6 +78,7 @@ div div div.header_overlay{
     border-bottom: 2px dotted;
 }*/
 
+
 .moreinfor{
     visibility: visible;
    animation-duration: 500ms;
@@ -102,7 +93,6 @@ div div div.header_overlay{
     font-weight: 600;
     transition: .3s all;
     flex-direction: right;
-    display: inline-block;
     float: right;
     
     
@@ -125,6 +115,7 @@ div div div.header_overlay{
 }
 
 header {
+    background-color: rgba(129, 122, 122, 0.19);
     position: sticky;
     padding: 1em;
     top: 0;
@@ -147,16 +138,29 @@ text-decoration: none;
 
 }
 
-
+.lni {
+    float: right;
+    font: normal normal normal 3em/1 'LineIcons';
+    color: red;
+    /* flex-shrink: 0;
+    speak: none;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
 input#menu_button {
     display: none;
     
+   
 }
 
 input#menu_button:checked ~ nav {
     height:200px;
+  
+ 
 } 
-
 
 @font-face {
     font-family: my_font;
@@ -630,9 +634,9 @@ section.backgound_container button a{
         position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
-    
 
     }
+
 }
 
 @media screen and (min-width:768px) {
@@ -669,7 +673,7 @@ section.backgound_container button a{
         position: relative;
         background-color: #FF530A;
     }
-    
+
     .newsletter {
         padding: 130px 20px 10px 20px;
     }
