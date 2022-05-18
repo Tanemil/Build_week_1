@@ -36,13 +36,22 @@ p{
     position:absolute;
 }
 
-header{
+/* header{
     background-image: url(../images/header.jpg);
     background-position: center ;
     background-size: cover;
     height: 10rem;
 }
+ */
 
+ header {
+     background-color: rgba(129, 122, 122, 0.19);
+ }
+ 
+
+.logo{
+    float: left;
+}
 .menu{
     position: relative;
     padding: 2.4em; 
@@ -108,7 +117,6 @@ header {
     position: sticky;
     padding: 1em;
     top: 0;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -120,6 +128,7 @@ header div {
 
 
 }
+
 a{
 color: #2E2E2E;
 text-decoration: none;
@@ -129,6 +138,7 @@ text-decoration: none;
 
 input#menu_button {
     display: none;
+    
 }
 
 input#menu_button:checked ~ nav {
@@ -169,7 +179,8 @@ input#menu_button:checked ~ nav {
 
     header nav ul li a {
         text-decoration: none;
-        color: grey;
+        color: 
+        #2E2E2E;
         
 
     }
