@@ -37,10 +37,22 @@ p{
 }
 
 
+div.container_background_header{
+    background-image: url(../images/header.jpg);
+    width: 100%;
+    height: 38vh;
+    background-size: cover;
+    margin-bottom: -3.8rem;
+}
 
+div.container_background_header div.overlay_oscurante{
+    background-color: rgba(0, 0, 0, 0.250);
+    width: 100%;
+    height: 100%;
+}
 
 div div div.header_overlay{
-    background-image: url(/assets/images/overlay-pattern.png);
+    background-image: url(../images/overlay-pattern.png);
     width: 100%;
     height: 100%;
 }
