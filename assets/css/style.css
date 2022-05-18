@@ -36,11 +36,27 @@ p{
     position:absolute;
 }
 
+
 /* header{
+=======
+div.container_background_header{
+
     background-image: url(../images/header.jpg);
-    background-position: center ;
-    background-size: cover;
-    height: 10rem;
+    width: 100%;
+    height: 38vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.container_background_header div.overlay_oscurante{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/overlay-pattern.png)
+}
+body div div div.header_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
 }
  */
 
@@ -92,7 +108,7 @@ p{
     transition: .3s all;
     flex-direction: right;
     display: inline-block;
-    float:right;
+    float: right;
     
     
 
@@ -119,7 +135,8 @@ header {
     top: 0;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    bottom: 0;
 }
 
 header div {
@@ -251,7 +268,7 @@ input#menu_button:checked ~ nav {
     margin-bottom: 45px;
 }
 
-.dot {
+.dot-scroll {
     display:inline-block;
     width: 1px;
     height: 12px;
@@ -273,8 +290,10 @@ input#menu_button:checked ~ nav {
 .container-chef {
      background-color: rgb(246, 246, 246);
      width: 100%;
-     margin-left: -5%;
      text-align: center;
+     margin-left: -3%;
+     padding-right: 6%;
+     
 }
 
 .img-chef {
@@ -300,7 +319,8 @@ input#menu_button:checked ~ nav {
 .container-chef hr {
     margin-bottom: 40px;
     margin-top: 45px;
-    color: rgb(247, 247, 247);
+    color:rgb(247, 247, 247);
+    width: 25%;
 }
 
 .container-chef p {
