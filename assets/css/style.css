@@ -240,7 +240,7 @@ input#menu_button:checked ~ nav {
     margin-bottom: 45px;
 }
 
-.dot {
+.dot-scroll {
     display:inline-block;
     width: 1px;
     height: 12px;
@@ -262,8 +262,8 @@ input#menu_button:checked ~ nav {
 .container-chef {
      background-color: rgb(246, 246, 246);
      width: 100%;
-     margin-left: -5%;
      text-align: center;
+     left: 0;
 }
 
 .img-chef {
@@ -289,7 +289,8 @@ input#menu_button:checked ~ nav {
 .container-chef hr {
     margin-bottom: 40px;
     margin-top: 45px;
-    color: rgb(247, 247, 247);
+    color:rgb(247, 247, 247);
+    width: 25%;
 }
 
 .container-chef p {
