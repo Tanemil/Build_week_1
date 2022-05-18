@@ -45,14 +45,15 @@ div.container_background_header{
     margin-bottom: -3.8rem;
 }
 
-div.container_background_header div.overlay_oscurante{
-    background-color: rgba(0, 0, 0, 0.250);
+div.container_background_header div.header_overlay{
+    background-color: rgba(0, 0, 0);
     width: 100%;
     height: 100%;
-}
+    opacity: 0.3;
+} 
 
-div div div.header_overlay{
-    background-image: url(../images/overlay-pattern.png);
+div div div.overlay_oscurante{
+    background-image: url(../images/overlay-pattern.png) ;
     width: 100%;
     height: 100%;
 }
@@ -568,10 +569,11 @@ hr#title_hr{
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 section.backgound_container div.backgound_container_overlay1{
-    background-image:url(../images/overlay-pattern.png);
+    background:linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%),url(../images/overlay-pattern.png);
     background-attachment: fixed;
 }
 
@@ -587,7 +589,7 @@ section.backgound_container div.blog_container{
 
 }
 
-section.backgound_container div div div div{
+section.backgound_container div div div div {
     position:relative;
     overflow: hidden;
 }
@@ -599,8 +601,13 @@ section.backgound_container div div div div img{
     transition: 0.65s ease-out;
 }
 
+.filler{
+    width: 100%;
+    height: 100%;
+}
+
 section.backgound_container div div div div img:hover{
-    transform: rotate(10deg) scale(1.2);
+    transform: rotate(10deg) scale(1.3);
     transition: 0.65s ease-in;
 }
 
@@ -648,7 +655,6 @@ section.backgound_container button a{
         transition: height 0.5s ease-out;
 
     }
-
 }
 
 @media screen and (min-width:768px) {
@@ -788,6 +794,8 @@ section.backgound_container button a{
     }
     .box_img_1 , .box_img_2 , .box_img_3 , .box_img_4 , .box_img_5 , .box_img_6{
         width: 100%;
+        height: 100%;
+        background-color: white;
     }
     .blog_container div.box1 , .blog_container div.box2 , .blog_container div.box3 ,.blog_container div.box4 ,.blog_container div.box5 , .blog_container div.box6 {
         display: flex;
@@ -809,13 +817,10 @@ section.backgound_container button a{
 
     #menu_mobile {
         display: none;
-       
-        
     }
 
     body header nav ul {
         margin-right: 2em;
-       
     }
 
      header nav ul li {
