@@ -38,28 +38,105 @@ p{
 
 .menu{
     position: relative;
-    padding: 2.4em; 
-    padding-top: 2.5em;
-    line-height: 4em;
-    width: 0 auto;
+    padding: 50px ; 
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 60px;
     
     
+    
+}
+.titlemenu span{
+    color: #FF530A;
 }
 .menu p{
     line-height: 2em;
 }
+.listmenu span{
+    color: #FF530A;
+}
 
 .titlemenu{
     text-align: center;
-    font-weight: 500;
     color: #2E2E2E;
-    padding:2,5em 0em;
     position:relative;
    
 }
-/*.dot{
-    border-bottom: 2px dotted;
-}*/
+div.titlemenu h2{
+    position: relative;
+    padding-bottom: 2em;
+    font-size: 1.4rem;
+}
+div.listmenu{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+}
+div.objectlist{
+    padding:20px 0 20px 0;
+
+}
+div.namefood span{
+    color: #959595;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    display: block;
+    float: none;
+}
+div.objectlist p{
+    margin-top: 12px;
+    padding-top: 0;
+    font-size: 0.9rem;
+}
+div.moreinfor{
+    float: right;
+    padding-top: 30px;
+}
+
+div .moreinfor button:hover{
+    background-color: #FF530A;
+    color: #ffffff;
+    cursor: pointer;
+}
+@media screen and(min-width:768px){
+    div.titlemenu h2{
+        font-size: 2.4rem;
+        padding-bottom: 40px;
+    }
+    div.titlemenu span{
+        font-size: 2.9rem;
+        color: #FF530A;
+    }
+    div.namefood{
+        position: relative;
+    }
+    div.namefood span{
+        float: right;
+        padding-top: 0;
+    }
+    div.namefood h4{
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        background-color: #ffffff;
+    }
+    div.titlemenu p{
+        padding-top: 30px;
+    }
+    
+    div.listmenu ul li div div div.dotted{
+        height: 2rem;
+        width: 2rem;
+        border: 1px dotted #959595;
+        margin-top: 20px;
+        position: relative;
+        background-color: #FF530A;
+    }
+}
+
+
+
+
 
 .moreinfor{
     visibility: visible;
@@ -81,12 +158,12 @@ p{
     
 
 }
-.price1{
+/*.price1{
     position: relative;
-    /*border-style: dotted;*/
+    border-style: dotted;
 
 }
-/*h2 .menu{
+h2 .menu{
     color: #959595;
 }*/
 
