@@ -50,7 +50,7 @@ div.container_background_header div.overlay_oscurante{
 }
 
 div div div.header_overlay{
-    background: url(../images/overlay-pattern.png);
+    background-image: url(/assets/images/overlay-pattern.png);
     width: 100%;
     height: 100%;
 }
@@ -65,105 +65,28 @@ div div div.header_overlay{
 }
 .menu{
     position: relative;
-    padding: 50px ; 
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    padding: 2.4em; 
+    padding-top: 2.5em;
+    line-height: 4em;
+    width: 0 auto;
     
     
-    
-}
-.titlemenu span{
-    color: #FF530A;
 }
 .menu p{
     line-height: 2em;
 }
-.listmenu span{
-    color: #FF530A;
-}
 
 .titlemenu{
     text-align: center;
+    font-weight: 500;
     color: #2E2E2E;
+    padding:2,5em 0em;
     position:relative;
    
 }
-div.titlemenu h2{
-    position: relative;
-    padding-bottom: 2em;
-    font-size: 1.4rem;
-}
-div.listmenu{
-    padding-top: 30px;
-    padding-bottom: 80px;
-    margin-bottom: 60px;
-}
-div.objectlist{
-    padding:20px 0 20px 0;
-
-}
-div.namefood span{
-    color: #959595;
-    font-size: 0.9rem;
-    padding-top: 10px;
-    display: block;
-    float: none;
-}
-div.objectlist p{
-    margin-top: 12px;
-    padding-top: 0;
-    font-size: 0.9rem;
-}
-div.moreinfor{
-    float: right;
-    padding-top: 30px;
-}
-
-div .moreinfor button:hover{
-    background-color: #FF530A;
-    color: #ffffff;
-    cursor: pointer;
-}
-@media screen and(min-width:768px){
-    div.titlemenu h2{
-        font-size: 2.4rem;
-        padding-bottom: 40px;
-    }
-    div.titlemenu span{
-        font-size: 2.9rem;
-        color: #FF530A;
-    }
-    div.namefood{
-        position: relative;
-    }
-    div.namefood span{
-        float: right;
-        padding-top: 0;
-    }
-    div.namefood h4{
-        display: inline-block;
-        position: relative;
-        z-index: 2;
-        background-color: #ffffff;
-    }
-    div.titlemenu p{
-        padding-top: 30px;
-    }
-    
-    div.listmenu ul li div div div.dotted{
-        height: 2rem;
-        width: 2rem;
-        border: 1px dotted #959595;
-        margin-top: 20px;
-        position: relative;
-        background-color: #FF530A;
-    }
-}
-
-
-
-
+/*.dot{
+    border-bottom: 2px dotted;
+}*/
 
 .moreinfor{
     visibility: visible;
@@ -185,12 +108,12 @@ div .moreinfor button:hover{
     
 
 }
-/*.price1{
+.price1{
     position: relative;
-    border-style: dotted;
+    /*border-style: dotted;*/
 
 }
-h2 .menu{
+/*h2 .menu{
     color: #959595;
 }*/
 
@@ -233,47 +156,6 @@ input#menu_button {
 input#menu_button:checked ~ nav {
     height:200px;
 } 
-
-@media screen and (max-width: 768px) {
-    header nav {
-        height: 0;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        transition: height 0.5s ease-out;
-    
-
-    }
-}
-
-@media screen and (min-width: 768px) {
-    
-    body header nav.navigation_bar {display: inline-block;}
-
-    #menu_mobile {
-        display: none;
-       
-        
-    }
-
-    body header nav ul {
-        margin-right: 2em;
-       
-    }
-
-     header nav ul li {
-        display: inline-block;
-        margin: 0 0 0 1em;
-    }
-
-    header nav ul li a {
-        text-decoration: none;
-        color: 
-        #2E2E2E;
-        
-
-    }
-}
 
 
 @font-face {
@@ -637,151 +519,6 @@ footer h3 span {
 
 /* Media Queries Gian */
 
-@media screen and (min-width:767px) { /* Tablet */
-    .newsletter {
-        padding: 130px 20px 10px 20px;
-    }
-    .newsletter #subscription input {
-        width: 40%;
-        padding: 0 50px;
-        height: 62px;
-    }
-    .newsletter input#subscribe {
-        padding-left: 10px;
-    }
-    .newsletter a p {
-        margin-left: -4.5px;
-        display: inline-block;
-        text-align: center;
-        padding-bottom: 45px;
-        width: 220px;
-        height: 62px;
-        float: none;
-    }
-    .newsletter h1 {
-        font-size: 2.5em;
-        margin-bottom: 50px;
-    }
-    .newsletter span {
-        font-size: 1.3em;
-        font-weight: 700;
-    }
-    .newsletter hr {
-        width: 20%;
-        margin-bottom: 10px;
-    }
-    .form {
-        padding: 100px 20px 50px 20px;
-    }
-    .form h1 {
-        font-size: 2em;
-    }
-    .form h3 {
-        margin-bottom: -20px;
-    }
-    .form hr {
-        width: 20%;
-    }
-    .form ul li input#name, input#email, input#text {
-        font-size: 0.8em;
-        margin: 5px 0;
-    }
-    .form span a p {
-        width: 500px;
-        padding: 15px 40px;
-        margin: auto;
-        margin-top: 20px;
-    }
-    .footer {
-        padding: 0 40px;
-    }
-    .footer h3#tablet {
-        padding: 0 10px;
-    }
-    .footer h3#desktop {
-        display: none;
-    }
-    .contact-us {
-        padding: 0 10px;
-        display: inline-flex;
-        flex-wrap: nowrap;
-    }
-    .contact-us div {
-        margin-right: 20px;
-    }
-    .blog-posts {
-        padding: 10px 10px;
-    }
-    .photo-stream {
-        padding: 10px 10px 100px 10px;
-    }
-    .photo-stream #images {
-        margin-top: -25px;
-    }
-    .copyright {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (min-width:991px) { /* Desktop small screen */
-    .newsletter input#subscribe {
-        padding-left: 10px;
-    }
-    .form h3 {
-        margin-left: 75px;
-    }
-    .form input#name, input#email, input#text  {
-        width: 85%;
-    }
-    .form span a p {
-        margin-right: 72px;
-        float: right;
-        width: 500px;
-    }
-    .footer {
-        padding: 100px 0 0 0;
-    }
-    footer .contact-us, .blog-posts, .photo-stream {
-        display: inline-table;
-        width: 30%;
-        padding: 0 0 100px 0;
-    }
-    footer .contact-us {
-        padding-left: 50px;
-    }
-    footer h3 {
-        margin-bottom: 15px;
-    }
-    footer h3#tablet {
-        display: none;
-    }
-    .contact-us h3#desktop {
-        display: block;
-    }
-} 
-
-@media screen and (min-width:1200px){ /* Desktop big screen */
-    .newsletter input#subscribe {
-        padding-left: 10px;
-        width: 350px;
-    }
-    .form input#name, input#email, input#text  {
-        width: 95%;
-    }
-    .form h3 {
-        margin-left: 20px;
-    }
-    .form span a p {
-        margin-right: 22px;
-    }
-    .blog-posts #desc_1, #desc_2 {
-        padding-right: 30px;
-    }
-    .photo-stream {
-        margin-left: 50px;
-    }
-}
-
 
 /* --------------- Blog ---------------- */
 
@@ -884,7 +621,139 @@ section.backgound_container button a{
     font-size: 1rem;
 }
 
-@media screen and (min-width:767px) {
+/* media screen */
+
+@media screen and (max-width: 768px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+    
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    div.titlemenu h2{
+        font-size: 2.4rem;
+        padding-bottom: 40px;
+    }
+    div.titlemenu span{
+        font-size: 2.9rem;
+        color: #FF530A;
+    }
+    div.namefood{
+        position: relative;
+    }
+    div.namefood span{
+        float: right;
+        padding-top: 0;
+    }
+    div.namefood h4{
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        background-color: #ffffff;
+    }
+    div.titlemenu p{
+        padding-top: 30px;
+    }
+
+    div.listmenu ul li div div div.dotted{
+        height: 2rem;
+        width: 2rem;
+        border: 1px dotted #959595;
+        margin-top: 20px;
+        position: relative;
+        background-color: #FF530A;
+    }
+    
+    .newsletter {
+        padding: 130px 20px 10px 20px;
+    }
+    .newsletter #subscription input {
+        width: 40%;
+        padding: 0 50px;
+        height: 62px;
+    }
+    .newsletter input#subscribe {
+        padding-left: 10px;
+    }
+    .newsletter a p {
+        margin-left: -4.5px;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 45px;
+        width: 220px;
+        height: 62px;
+        float: none;
+    }
+    .newsletter h1 {
+        font-size: 2.5em;
+        margin-bottom: 50px;
+    }
+    .newsletter span {
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+    .newsletter hr {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+    .form {
+        padding: 100px 20px 50px 20px;
+    }
+    .form h1 {
+        font-size: 2em;
+    }
+    .form h3 {
+        margin-bottom: -20px;
+    }
+    .form hr {
+        width: 20%;
+    }
+    .form ul li input#name, input#email, input#text {
+        font-size: 0.8em;
+        margin: 5px 0;
+    }
+    .form span a p {
+        width: 500px;
+        padding: 15px 40px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .footer {
+        padding: 0 40px;
+    }
+    .footer h3#tablet {
+        padding: 0 10px;
+    }
+    .footer h3#desktop {
+        display: none;
+    }
+    .contact-us {
+        padding: 0 10px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+    .contact-us div {
+        margin-right: 20px;
+    }
+    .blog-posts {
+        padding: 10px 10px;
+    }
+    .photo-stream {
+        padding: 10px 10px 100px 10px;
+    }
+    .photo-stream #images {
+        margin-top: -25px;
+    }
+    .copyright {
+        font-size: 1.1em;
+    }
+
     section.backgound_container div div div div.desc_box_1 , section.backgound_container div div div div.desc_box_2 , section.backgound_container div div div div.desc_box_3 , section.backgound_container div div div div.desc_box_4 , section.backgound_container div div div div.desc_box_5 , section.backgound_container div div div div.desc_box_6 {
         flex: 1 1 0;
     }
@@ -920,9 +789,69 @@ section.backgound_container button a{
         display: block;
         margin: 2rem auto 0 auto;
     }
+    body header nav.navigation_bar {display: inline-block;}
+
+    #menu_mobile {
+        display: none;
+       
+        
+    }
+
+    body header nav ul {
+        margin-right: 2em;
+       
+    }
+
+     header nav ul li {
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: 
+        #2E2E2E;
+        
+
+    }
     
 }
 @media screen and (min-width:991px){
+    .newsletter input#subscribe {
+        padding-left: 10px;
+    }
+    .form h3 {
+        margin-left: 75px;
+    }
+    .form input#name, input#email, input#text  {
+        width: 85%;
+    }
+    .form span a p {
+        margin-right: 72px;
+        float: right;
+        width: 500px;
+    }
+    .footer {
+        padding: 100px 0 0 0;
+    }
+    footer .contact-us, .blog-posts, .photo-stream {
+        display: inline-table;
+        width: 30%;
+        padding: 0 0 100px 0;
+    }
+    footer .contact-us {
+        padding-left: 50px;
+    }
+    footer h3 {
+        margin-bottom: 15px;
+    }
+    footer h3#tablet {
+        display: none;
+    }
+    .contact-us h3#desktop {
+        display: block;
+    }
+
     section.backgound_container div div div div img{
         height: auto;
     }
@@ -993,5 +922,25 @@ section.backgound_container button a{
     }
     section.backgound_container button{
         width: 18rem;
+    }
+
+    .newsletter input#subscribe {
+        padding-left: 10px;
+        width: 350px;
+    }
+    .form input#name, input#email, input#text  {
+        width: 95%;
+    }
+    .form h3 {
+        margin-left: 20px;
+    }
+    .form span a p {
+        margin-right: 22px;
+    }
+    .blog-posts #desc_1, #desc_2 {
+        padding-right: 30px;
+    }
+    .photo-stream {
+        margin-left: 50px;
     }
 }
