@@ -26,6 +26,7 @@ h4{
     font-size: 1.2rem;
 }
 
+
 body header label i.lni {
 
     float: right;
@@ -47,6 +48,7 @@ body header label i.lni {
     50% { opacity: 0.5; }
     100%{ opacity: 1;}
 }
+
 
 
 p{
@@ -139,14 +141,19 @@ hr.line{
     border-right: none;
     border-left: none;
 }
-
-.moreinfor button{
+.moreinfor {
+    display: flex;
+    justify-content: right;
+    padding: 30px 0 60px 0;
+}
+.moreinfor button {
+    background-color:#ffffff;
     border:1px solid #FF530A;
     color: #FF530A;
     height: 5rem;
     width:18rem;
     font-weight: bold;
-    float: right;
+    
     font-size: 15px;
     text-transform: uppercase;
     animation-duration: 500ms;
@@ -156,8 +163,8 @@ hr.line{
     font-weight: 600;
 }
 .moreinfor button:hover{
-    background-color:#ffffff;
-    color: #FF530A;
+    background-color:#FF530A;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -226,33 +233,39 @@ input#menu_button:checked ~ nav {
     font-size: 1.3rem;
 }
 
-.container_First h3 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
 .scroll-images {
     width: 100%;
-    height: 170px;
+    height: 10rem;
     display: flex;
-    justify-content:center;
-    overflow: auto;
+    overflow:scroll;
     scroll-behavior: smooth;
     align-items: center;
     background-position: center;
-    margin-top: 70px;
     background-size: cover;
     
 }
 
+main section div div div.container_header_gallery i{
+    font-size: 1.9rem;
+    color: #AA9D84;
+}
+
+main section div div div.container_header_gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .div-images {
-    min-width: 250px;
-    height: 150px;
+    min-width: 50%;
+    height: 100%;
     margin: 10px 0px;
     cursor: pointer;
     border-radius: 3px;
     overflow: hidden;
-    
+    flex: 1 1 0; 
 }
 
 .child-img {
@@ -397,6 +410,11 @@ input#menu_button:checked ~ nav {
     font-size: 1.1em;
     margin: auto;
 }
+.newsletter #subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .newsletter input#subscribe {
     margin: 20px 0;
     font-weight: 500;
@@ -405,13 +423,17 @@ input#menu_button:checked ~ nav {
     opacity: 85%;
     padding: 25px 10px;
 }
-.newsletter a p {
-    float: left;
+.newsletter button {
+    border: none;
+    width: 200px;
+    height: 65px;
+    color: white;
     padding: 20px 70px;
-    background-color: rgb(132, 189, 191);
+    background-color: #7EC3BB;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.1em;
+    transition: background-color 0.2s ease-in;
 }
 .newsletter a:link {
     text-decoration: none;
@@ -419,18 +441,16 @@ input#menu_button:checked ~ nav {
 .newsletter a:visited {
     color: white;
 }
-.newsletter a:hover {
-    animation: shadow 2.5s infinite;
+.newsletter a p:hover {
+    background-color: #69a8a1;
+
 }
-/* .newsletter a:active {
+.newsletter a:active {
+
+}    
     
-} */
-@keyframes shadow {
-    0% { box-shadow: 0 0 0 5px rgba(132, 189, 191, 1);}
-    25% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.7);}
-    50% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.4);}
-    100% { box-shadow: 0 0 0 0 rgba(132, 189, 191, 0.2);}
-}
+
+
 
 /* ------ Form ------ */
 .form {
@@ -705,6 +725,14 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:768px) {
+    main section div div.container_gallery{
+        max-width: 46rem;
+        margin: 0 auto;
+    }
+    .div-images{
+        min-width: 29.5%;
+        padding: 0 1rem;
+    }
     div.titlemenu h2{
         font-size: 2.4rem;
         padding-bottom: 40px;
@@ -878,12 +906,18 @@ section.backgound_container button a{
         text-decoration: none;
         color: 
         #2E2E2E;
-        
-
     }
     
 }
 @media screen and (min-width:992px){
+    .div-images{
+        min-width: 24%;
+        padding: 0 0.35rem;
+    }
+    main section div div.container_gallery{
+        max-width: 58rem;
+        margin: 0 auto;
+    }
     .newsletter input#subscribe {
         padding-left: 10px;
     }
@@ -973,6 +1007,10 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:1200px){
+    main section div div.container_gallery{
+        max-width: 72rem;
+        margin: 0 auto;
+    }
     section.backgound_container div.blog_container{
         grid-template-rows: 1fr 1fr 1fr;
     }
