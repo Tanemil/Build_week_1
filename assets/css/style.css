@@ -107,6 +107,7 @@ div div div.overlay_oscurante{
     
     
 }
+
 .titlemenu h2{
     text-align: center;
 }
@@ -130,6 +131,14 @@ div div div.overlay_oscurante{
     color: #959595;
     font-family: my_font;
 }
+.namefood h4{
+    animation: animazione_p 1s ease-in ;
+}
+.objectlist p{
+    animation: animazione_p 1s ease-in ;
+    line-height: 1rem;
+
+}
 
 .titlemenu{
     text-align:center;
@@ -148,9 +157,6 @@ div div div.overlay_oscurante{
 }
 .listmenu span.week{
     color: #FF530A;
-}
-.namefood h4{
-    padding-bottom: 1px;
 }
 .listmenu h2{
     font-size:20px;
