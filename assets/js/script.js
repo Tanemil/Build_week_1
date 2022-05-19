@@ -10,10 +10,15 @@ function scroll_gallery(){
     let var_immagini_galleria
 
     if (screen.width >= 768 && screen.width < 992 ){
-        console.log(1)
         var_padding = 4.8
         var_immagini_galleria = 5
     } else if(screen.width < 768){
+        if (Math.ceil((last_index !== counter+1)/2)-1){
+            document.getElementsByClassName('fa-circle')[Math.ceil((counter+1)/2-1)].style.color = '#DADADA'
+        }else{
+            document.getElementsByClassName('fa-circle')[last_index].style.color = '#DADADA' 
+        }
+        document.getElementsByClassName('fa-circle')[Math.ceil((counter+1)/2)].style.color = '#FF530A'
         var_padding = 0
         var_immagini_galleria = 6
     }else if(screen.width >= 992){
