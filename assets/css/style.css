@@ -26,6 +26,22 @@ h4{
     font-size: 1.2rem;
 }
 
+body header label i.lni {
+
+    float: right;
+    display: inline-block;
+    font: normal normal normal 1.5em/1.5 'LineIcons';
+    color:#FF530A ;
+    flex-shrink: 0;
+    speak: none;
+    text-transform: none;
+    line-height: 1.5;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
 @keyframes animazione_p {
     0% {opacity: 0}
     50% { opacity: 0.5; }
@@ -677,6 +693,7 @@ section.backgound_container button a{
 
 @media screen and (max-width: 768px) {
     header nav {
+        margin-top: 2em;
         height: 0;
         overflow: hidden;
         position: relative;
