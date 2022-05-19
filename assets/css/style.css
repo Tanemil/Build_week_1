@@ -745,6 +745,17 @@ section.backgound_container button{
     width: 15rem;
     background-color: #ff530a;
     border-style: none;
+    transition: background-color 0.3s ease-in;
+    transition: .3s all ease-out;
+}
+
+section.backgound_container button:hover{
+    background-color: transparent;
+    border: 1px solid #ff530a;
+}
+
+section.backgound_container button:hover a{
+    color: #ff530a;
 }
 
 section.backgound_container button a{
