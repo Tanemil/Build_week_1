@@ -26,6 +26,31 @@ h4{
     font-size: 1.2rem;
 }
 
+
+body header label i.lni {
+
+    float: right;
+    display: inline-block;
+    font: normal normal normal 1.5em/1.5 'LineIcons';
+    color:#FF530A ;
+    flex-shrink: 0;
+    speak: none;
+    text-transform: none;
+    line-height: 1.5;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+@keyframes animazione_p {
+    0% {opacity: 0}
+    50% { opacity: 0.5; }
+    100%{ opacity: 1;}
+}
+
+
+
 p{
     font-size: 0.9rem;
     color: #959595;
@@ -61,7 +86,11 @@ div div div.overlay_oscurante{
 }
 
  header {
-     background-color: rgba(129, 122, 122, 0.19);
+     margin-left: 25px;
+     margin-right: 25px;
+     ;
+     width: 90%;
+     
  }
  
 
@@ -150,7 +179,7 @@ hr.line{
 }
 
 header {
-    background-color: rgba(129, 122, 122, 0.19);
+    background-color: rgba(246, 246, 246, 0.8) ;
     position: sticky;
     padding: 1em;
     top: 0;
@@ -695,6 +724,7 @@ section.backgound_container button a{
 
 @media screen and (max-width: 768px) {
     header nav {
+        margin-top: 2em;
         height: 0;
         overflow: hidden;
         position: relative;
@@ -868,7 +898,8 @@ section.backgound_container button a{
         display: block;
         margin: 2rem auto 0 auto;
     }
-    body header nav.navigation_bar {display: inline-block;}
+    body header nav.navigation_bar {display: inline-block;
+    margin-left: 30px;}
 
     #menu_mobile {
         display: none;
@@ -876,6 +907,7 @@ section.backgound_container button a{
 
     body header nav ul {
         margin-right: 2em;
+       
     }
 
      header nav ul li {
@@ -887,6 +919,7 @@ section.backgound_container button a{
         text-decoration: none;
         color: 
         #2E2E2E;
+        
     }
     
 }
