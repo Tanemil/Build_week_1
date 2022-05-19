@@ -1,5 +1,7 @@
 let counter = 0
 
+let last_index = 0
+
 function scroll_gallery(){
 
     // mi segno il padding grazie a screen.width siccome nel css cambia in base al media screen 
@@ -44,14 +46,11 @@ function scroll_gallery(){
 
 }
 
-let last_index = 0
-
-
 function scroll_gallery_dots(num_dot){
 
     let dimensione_scroll = document.getElementsByClassName('child-img')[0].width 
     let var_padding 
-    
+
     document.getElementsByClassName('fa-circle')[last_index].style.color = '#DADADA'
     document.getElementsByClassName('fa-circle')[num_dot-1].style.color = '#FF530A'
     last_index = num_dot-1
