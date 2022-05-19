@@ -26,13 +26,6 @@ h4{
     font-size: 1.2rem;
 }
 
-@keyframes animazione_p {
-    0% {opacity: 0}
-    50% { opacity: 0.5; }
-    100%{ opacity: 1;}
-}
-
-
 p{
     font-size: 0.9rem;
     color: #959595;
@@ -210,33 +203,39 @@ input#menu_button:checked ~ nav {
     font-size: 1.3rem;
 }
 
-.container_First h3 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
 .scroll-images {
     width: 100%;
-    height: 170px;
+    height: 10rem;
     display: flex;
-    justify-content:center;
-    overflow: auto;
+    overflow:scroll;
     scroll-behavior: smooth;
     align-items: center;
     background-position: center;
-    margin-top: 70px;
     background-size: cover;
     
 }
 
+main section div div div.container_header_gallery i{
+    font-size: 1.9rem;
+    color: #AA9D84;
+}
+
+main section div div div.container_header_gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .div-images {
-    min-width: 250px;
-    height: 150px;
+    min-width: 50%;
+    height: 100%;
     margin: 10px 0px;
     cursor: pointer;
     border-radius: 3px;
     overflow: hidden;
-    
+    flex: 1 1 0; 
 }
 
 .child-img {
@@ -688,6 +687,14 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:768px) {
+    main section div div.container_gallery{
+        max-width: 46rem;
+        margin: 0 auto;
+    }
+    .div-images{
+        min-width: 29.5%;
+        padding: 0 1rem;
+    }
     div.titlemenu h2{
         font-size: 2.4rem;
         padding-bottom: 40px;
@@ -861,12 +868,18 @@ section.backgound_container button a{
         text-decoration: none;
         color: 
         #2E2E2E;
-        
-
     }
     
 }
 @media screen and (min-width:992px){
+    .div-images{
+        min-width: 24%;
+        padding: 0 0.35rem;
+    }
+    main section div div.container_gallery{
+        max-width: 58rem;
+        margin: 0 auto;
+    }
     .newsletter input#subscribe {
         padding-left: 10px;
     }
@@ -956,6 +969,10 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:1200px){
+    main section div div.container_gallery{
+        max-width: 72rem;
+        margin: 0 auto;
+    }
     section.backgound_container div.blog_container{
         grid-template-rows: 1fr 1fr 1fr;
     }
