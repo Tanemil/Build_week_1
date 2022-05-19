@@ -91,10 +91,9 @@ div div div.overlay_oscurante{
 }
 .menu{
     position: relative;
-    padding-right: 8em;
-    padding-left: 8em;
-    
-    padding-top: 2.5em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    /*padding-top: 2.5em;*/
     line-height: 4em;
     width: 0 auto;
     
@@ -107,7 +106,21 @@ div div div.overlay_oscurante{
     font-size: 27px;
 }
 .menu p{
-    line-height: 2em;
+    line-height: 1em;
+    margin-top: 0em;
+    margin-left: 0.2em;
+    
+}
+.titlemenu p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 40px 133px 0;
+}
+.price2{
+    font-size: small;
+    color: #959595;
+    font-family: my_font;
 }
 
 .titlemenu{
@@ -116,6 +129,7 @@ div div div.overlay_oscurante{
     color: #2E2E2E;
     padding:40px 0px;
     position:relative;
+    margin-top: 12px;
    
 }
 .listmenu li{
@@ -127,15 +141,23 @@ div div div.overlay_oscurante{
 .listmenu span.week{
     color: #FF530A;
 }
+.namefood h4{
+    padding-bottom: 1px;
+}
+.listmenu h2{
+    font-size:20px;
+    margin-bottom: 1em ;
+}
 
 hr.line{
-    width: 20rem;
+    width: 9rem;
     border-top: none ;
-    border-bottom: 0.1rem solid #959595;
+    border-bottom: 1px solid #9d9583;
     border-top: none;
     margin-bottom: 2.5rem;
     border-right: none;
     border-left: none;
+    margin-top: 8px;
 }
 .moreinfor {
     display: flex;
@@ -149,8 +171,8 @@ hr.line{
     height: 5rem;
     width:18rem;
     font-weight: bold;
-    
     font-size: 15px;
+    animation-name: animate__bounceIn;
     text-transform: uppercase;
     animation-duration: 500ms;
     animation-delay: 1200ms;
@@ -235,7 +257,7 @@ input#menu_button:checked ~ nav {
 
 .scroll-images {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     display: flex;
     overflow:scroll;
     scroll-behavior: smooth;
@@ -245,9 +267,16 @@ input#menu_button:checked ~ nav {
     
 }
 
-main section div div div.container_header_gallery i{
+main section div div div.container_header_gallery button i{
     font-size: 1.9rem;
     color: #AA9D84;
+}
+
+main section div div div.container_header_gallery button{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: white;
 }
 
 main section div div div.container_header_gallery{
@@ -762,7 +791,7 @@ section.backgound_container button a{
         height: 1rem;
         width: 100%;
         border-bottom:  1px dotted #959595;
-        margin-top: 20px;
+        margin-top: 25px;
         position: absolute;
         top: 0;
     }
@@ -1011,9 +1040,16 @@ section.backgound_container button a{
         margin: 0;
         width: 18rem;
     }
+    section.menu{
+        padding-left: 4em;
+        padding-right: 3em;
+    }
 }
 
 @media screen and (min-width:1200px){
+    .scroll-images{
+        height: 13rem;
+    }
     main section div div.container_gallery{
         max-width: 72rem;
         margin: 0 auto;
