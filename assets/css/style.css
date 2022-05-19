@@ -101,7 +101,7 @@ div div div.overlay_oscurante{
     position: relative;
     padding-right: 2.5em;
     padding-left: 2.5em;
-    padding-top: 2.5em;
+    /*padding-top: 2.5em;*/
     line-height: 4em;
     width: 0 auto;
     
@@ -118,6 +118,12 @@ div div div.overlay_oscurante{
     margin-top: 0em;
     margin-left: 0.2em;
     
+}
+.titlemenu p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 40px 133px 0;
 }
 .price2{
     font-size: small;
@@ -174,7 +180,7 @@ hr.line{
     width:18rem;
     font-weight: bold;
     font-size: 15px;
-    
+    animation-name: animate__bounceIn;
     text-transform: uppercase;
     animation-duration: 500ms;
     animation-delay: 1200ms;
@@ -1033,6 +1039,10 @@ section.backgound_container button a{
         display: block;
         margin: 0;
         width: 18rem;
+    }
+    section.menu{
+        padding-left: 4em;
+        padding-right: 3em;
     }
 }
 
