@@ -210,7 +210,7 @@ input#menu_button:checked ~ nav {
 
 .scroll-images {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     display: flex;
     overflow:scroll;
     scroll-behavior: smooth;
@@ -220,9 +220,16 @@ input#menu_button:checked ~ nav {
     
 }
 
-main section div div div.container_header_gallery i{
+main section div div div.container_header_gallery button i{
     font-size: 1.9rem;
     color: #AA9D84;
+}
+
+main section div div div.container_header_gallery button{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: white;
 }
 
 main section div div div.container_header_gallery{
@@ -981,6 +988,9 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:1200px){
+    .scroll-images{
+        height: 13rem;
+    }
     main section div div.container_gallery{
         max-width: 72rem;
         margin: 0 auto;
