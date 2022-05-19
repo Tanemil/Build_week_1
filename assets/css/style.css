@@ -409,10 +409,6 @@ main section div div.gallery_dots button i{
     
 }
 
-
-
-
-
 /* ---------- Main (Newsletter-Form) ------------ */
 
 .tomato_container {
@@ -433,7 +429,7 @@ main section div div.gallery_dots button i{
 
 /* ------ Newsletter ------ */
 .newsletter {
-    padding: 130px 20px;
+    padding: 130px 20px 50px 20px;
     margin-bottom: 75px;
     text-align: center;
     color: white;
@@ -465,10 +461,12 @@ main section div div.gallery_dots button i{
 }
 .newsletter #subscription {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
 }
 .newsletter input#subscribe {
+    border: 1px solid white;
     margin: 20px 0;
     font-weight: 500;
     font-size: 1em;
@@ -478,7 +476,7 @@ main section div div.gallery_dots button i{
 }
 .newsletter button {
     border: none;
-    width: 200px;
+    width: 210px;
     height: 65px;
     color: white;
     padding: 20px 70px;
@@ -488,22 +486,16 @@ main section div div.gallery_dots button i{
     letter-spacing: 0.1em;
     transition: background-color 0.2s ease-in;
 }
-.newsletter a:link {
+.newsletter button:link {
     text-decoration: none;
 }
-.newsletter a:visited {
+.newsletter button:visited {
     color: white;
 }
-.newsletter a p:hover {
+.newsletter button:hover {
     background-color: #69a8a1;
-
+    cursor: pointer;
 }
-.newsletter a:active {
-
-}    
-    
-
-
 
 /* ------ Form ------ */
 .form {
@@ -822,26 +814,22 @@ section.backgound_container button a{
         position: absolute;
         top: 0;
     }
-
+    
     .newsletter {
         padding: 130px 20px 10px 20px;
     }
+    .newsletter #subscription {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
     .newsletter #subscription input {
-        width: 40%;
-        padding: 0 50px;
+        width: 450px;
+        padding: 0 0 0 10px;
         height: 62px;
     }
-    .newsletter input#subscribe {
-        padding-left: 10px;
-    }
-    .newsletter a p {
-        margin-left: -4.5px;
-        display: inline-block;
-        text-align: center;
-        padding-bottom: 45px;
-        width: 220px;
-        height: 62px;
-        float: none;
+    .newsletter button {
+        width: 200px;
     }
     .newsletter h1 {
         font-size: 2.5em;
@@ -878,7 +866,9 @@ section.backgound_container button a{
         margin-top: 20px;
     }
     .footer {
-        padding: 0 40px;
+        padding: 15px 40px;
+        max-width: 72rem;
+        margin: 0 auto;
     }
     .footer h3#tablet {
         padding: 0 10px;
@@ -969,9 +959,6 @@ section.backgound_container button a{
         text-decoration: none;
         color: 
         #2E2E2E;
-        
-        
-        
     }
     
 }
@@ -1105,11 +1092,6 @@ section.backgound_container button a{
     section.backgound_container button{
         width: 18rem;
     }
-
-    .newsletter input#subscribe {
-        padding-left: 10px;
-        width: 350px;
-    }
     .form input#name, input#email, input#text  {
         width: 95%;
     }
@@ -1117,7 +1099,7 @@ section.backgound_container button a{
         margin-left: 20px;
     }
     .form span a p {
-        margin-right: 22px;
+        margin-right: 30px;
     }
     .blog-posts #desc_1, #desc_2 {
         padding-right: 30px;
