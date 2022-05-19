@@ -86,7 +86,11 @@ div div div.overlay_oscurante{
 }
 
  header {
-     background-color: rgba(129, 122, 122, 0.19);
+     margin-left: 25px;
+     margin-right: 25px;
+     ;
+     width: 90%;
+     
  }
  
 
@@ -175,7 +179,7 @@ hr.line{
 }
 
 header {
-    background-color: rgba(129, 122, 122, 0.19);
+    background-color: rgba(246, 246, 246, 0.8) ;
     position: sticky;
     padding: 1em;
     top: 0;
@@ -887,7 +891,8 @@ section.backgound_container button a{
         display: block;
         margin: 2rem auto 0 auto;
     }
-    body header nav.navigation_bar {display: inline-block;}
+    body header nav.navigation_bar {display: inline-block;
+    margin-left: 30px;}
 
     #menu_mobile {
         display: none;
@@ -895,6 +900,7 @@ section.backgound_container button a{
 
     body header nav ul {
         margin-right: 2em;
+       
     }
 
      header nav ul li {
@@ -906,6 +912,7 @@ section.backgound_container button a{
         text-decoration: none;
         color: 
         #2E2E2E;
+        
     }
     
 }
