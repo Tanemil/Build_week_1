@@ -77,9 +77,8 @@ div div div.overlay_oscurante{
 }
 .menu{
     position: relative;
-    padding-right: 8em;
+    padding-right: 6em;
     padding-left: 8em;
-    
     padding-top: 2.5em;
     line-height: 4em;
     width: 0 auto;
@@ -93,7 +92,10 @@ div div div.overlay_oscurante{
     font-size: 27px;
 }
 .menu p{
-    line-height: 2em;
+    line-height: 1em;
+}
+.price2{
+    font-size: small;
 }
 
 .titlemenu{
@@ -135,8 +137,8 @@ hr.line{
     height: 5rem;
     width:18rem;
     font-weight: bold;
-    
     font-size: 15px;
+    
     text-transform: uppercase;
     animation-duration: 500ms;
     animation-delay: 1200ms;
