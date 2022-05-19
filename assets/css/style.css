@@ -25,11 +25,20 @@ h4{
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+@keyframes animazione_p {
+    0% {opacity: 0}
+    50% { opacity: 0.5; }
+    100%{ opacity: 1;}
+}
+
+
 p{
     font-size: 0.9rem;
     color: #959595;
     margin: 0 2rem;
     line-height: 1.5em;
+    animation: animazione_p 1s ease-in ;
 }
 .dot{
     border-bottom: #959595 dotted;
@@ -70,7 +79,6 @@ div div div.overlay_oscurante{
     position: relative;
     padding-right: 8em;
     padding-left: 8em;
-    height: 89em;
     
     padding-top: 2.5em;
     line-height: 4em;
@@ -211,7 +219,7 @@ input#menu_button:checked ~ nav {
     width: 100%;
     height: 170px;
     display: flex;
-    justify-content:start;
+    justify-content:center;
     overflow: auto;
     scroll-behavior: smooth;
     align-items: center;
@@ -237,16 +245,10 @@ input#menu_button:checked ~ nav {
    
 }
 
-.container-scroll {
-    display: inline-block;
-    margin-left: 50%;
-    transform: translate(-50%);
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
 
-.dot-scroll {
-    display:inline-block;
+.navigation-manual {
+    display:flex;
+    justify-content: center;
     width: 1px;
     height: 12px;
     border-radius: 100%;
@@ -255,12 +257,28 @@ input#menu_button:checked ~ nav {
     background-color: grey;
     cursor: pointer;
     
-
 }
 
-.dot:hover {
-    background-color: #eb5b23;
+.manual-btn {
+    border: 2px solid #FF530A;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+.manual-btn:not(:last-child) {
+    margin-right: 7px;
+}
+
+.manual-btn:hover{
+    background-color: #FF530A;
+}
+
+
+
+
 
 /* SLIDER PART 2 */
 
@@ -270,6 +288,7 @@ input#menu_button:checked ~ nav {
      text-align: center;
      margin-left: -3%;
      padding-right: 6%;
+     margin-top: 50px;
      
 }
 
@@ -307,6 +326,8 @@ input#menu_button:checked ~ nav {
     padding-bottom: 70px;
     
 }
+
+
 
 
 
@@ -385,9 +406,9 @@ input#menu_button:checked ~ nav {
 .newsletter a:hover {
     animation: shadow 2.5s infinite;
 }
-.newsletter a:active {
+/* .newsletter a:active {
     
-}
+} */
 @keyframes shadow {
     0% { box-shadow: 0 0 0 5px rgba(132, 189, 191, 1);}
     25% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.7);}
