@@ -49,8 +49,6 @@ body header label i.lni {
     100%{ opacity: 1;}
 }
 
-
-
 p{
     font-size: 0.9rem;
     color: #959595;
@@ -266,12 +264,11 @@ input#menu_button:checked ~ nav {
     width: 100%;
     height: 12rem;
     display: flex;
-    overflow:scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
     align-items: center;
     background-position: center;
     background-size: cover;
-    
 }
 
 main section div div div.container_header_gallery button i{
@@ -310,6 +307,26 @@ main section div div div.container_header_gallery{
    
 }
 
+main section div div.gallery_dots{
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+main section div div.gallery_dots button{
+    display: flex;
+    width: 0.9rem;
+    justify-content: center;
+    background-color: white;
+    border: none;
+}
+
+main section div div.gallery_dots button i{
+    font-size: 0.6rem;
+    margin: 0 auto;
+    color: #DADADA;
+}
+
 
 .navigation-manual {
     display:flex;
@@ -319,7 +336,7 @@ main section div div div.container_header_gallery{
     border-radius: 100%;
     border-style: none;
     margin: 0 auto;
-    background-color: grey;
+    background-color: #F6F6F6;
     cursor: pointer;
     
 }
@@ -755,19 +772,21 @@ section.backgound_container button a{
         position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
-
     }
-    
 }
 
 @media screen and (min-width:768px) {
+    main section div div.gallery_dots button#button_gallery_first{
+        display: none;
+    }
     main section div div.container_gallery{
         max-width: 46rem;
         margin: 0 auto;
+        padding: 0 2rem;
     }
     .div-images{
-        min-width: 29.5%;
-        padding: 0 1rem;
+        min-width: 32%;
+        padding: 0 0.3rem;
     }
     div.titlemenu h2{
         font-size: 2.4rem;
@@ -954,6 +973,9 @@ section.backgound_container button a{
     
 }
 @media screen and (min-width:992px){
+    main section div div.gallery_dots button#button_gallery_last{
+        display: none;
+    }
     .div-images{
         min-width: 24%;
         padding: 0 0.35rem;
@@ -961,6 +983,7 @@ section.backgound_container button a{
     main section div div.container_gallery{
         max-width: 58rem;
         margin: 0 auto;
+        padding: 0 4rem;
     }
     .newsletter input#subscribe {
         padding-left: 10px;
