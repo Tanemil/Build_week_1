@@ -123,14 +123,19 @@ hr.line{
     border-right: none;
     border-left: none;
 }
-
-.moreinfor button{
+.moreinfor {
+    display: flex;
+    justify-content: right;
+    padding: 30px 0 60px 0;
+}
+.moreinfor button {
+    background-color:#ffffff;
     border:1px solid #FF530A;
     color: #FF530A;
     height: 5rem;
     width:18rem;
     font-weight: bold;
-    float: right;
+    
     font-size: 15px;
     text-transform: uppercase;
     animation-duration: 500ms;
@@ -140,8 +145,8 @@ hr.line{
     font-weight: 600;
 }
 .moreinfor button:hover{
-    background-color:#ffffff;
-    color: #FF530A;
+    background-color:#FF530A;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -381,6 +386,11 @@ input#menu_button:checked ~ nav {
     font-size: 1.1em;
     margin: auto;
 }
+.newsletter #subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .newsletter input#subscribe {
     margin: 20px 0;
     font-weight: 500;
@@ -389,13 +399,17 @@ input#menu_button:checked ~ nav {
     opacity: 85%;
     padding: 25px 10px;
 }
-.newsletter a p {
-    float: left;
+.newsletter button {
+    border: none;
+    width: 200px;
+    height: 65px;
+    color: white;
     padding: 20px 70px;
-    background-color: rgb(132, 189, 191);
+    background-color: #7EC3BB;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.1em;
+    transition: background-color 0.2s ease-in;
 }
 .newsletter a:link {
     text-decoration: none;
@@ -403,18 +417,16 @@ input#menu_button:checked ~ nav {
 .newsletter a:visited {
     color: white;
 }
-.newsletter a:hover {
-    animation: shadow 2.5s infinite;
+.newsletter a p:hover {
+    background-color: #69a8a1;
+
 }
-/* .newsletter a:active {
+.newsletter a:active {
+
+}    
     
-} */
-@keyframes shadow {
-    0% { box-shadow: 0 0 0 5px rgba(132, 189, 191, 1);}
-    25% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.7);}
-    50% { box-shadow: 0 0 0 10px rgba(132, 189, 191, 0.4);}
-    100% { box-shadow: 0 0 0 0 rgba(132, 189, 191, 0.2);}
-}
+
+
 
 /* ------ Form ------ */
 .form {
