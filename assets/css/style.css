@@ -99,8 +99,8 @@ div div div.overlay_oscurante{
 }
 .menu{
     position: relative;
-    padding-right: 6em;
-    padding-left: 8em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
     padding-top: 2.5em;
     line-height: 4em;
     width: 0 auto;
@@ -115,9 +115,14 @@ div div div.overlay_oscurante{
 }
 .menu p{
     line-height: 1em;
+    margin-top: 0em;
+    margin-left: 0.2em;
+    
 }
 .price2{
     font-size: small;
+    color: #959595;
+    font-family: my_font;
 }
 
 .titlemenu{
@@ -126,6 +131,7 @@ div div div.overlay_oscurante{
     color: #2E2E2E;
     padding:40px 0px;
     position:relative;
+    margin-top: 12px;
    
 }
 .listmenu li{
@@ -137,15 +143,23 @@ div div div.overlay_oscurante{
 .listmenu span.week{
     color: #FF530A;
 }
+.namefood h4{
+    padding-bottom: 1px;
+}
+.listmenu h2{
+    font-size:20px;
+    margin-bottom: 1em ;
+}
 
 hr.line{
-    width: 20rem;
+    width: 9rem;
     border-top: none ;
-    border-bottom: 0.1rem solid #959595;
+    border-bottom: 1px solid #9d9583;
     border-top: none;
     margin-bottom: 2.5rem;
     border-right: none;
     border-left: none;
+    margin-top: 8px;
 }
 .moreinfor {
     display: flex;
@@ -775,7 +789,7 @@ section.backgound_container button a{
         height: 1rem;
         width: 100%;
         border-bottom:  1px dotted #959595;
-        margin-top: 20px;
+        margin-top: 25px;
         position: absolute;
         top: 0;
     }
