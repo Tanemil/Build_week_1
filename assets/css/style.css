@@ -1,6 +1,6 @@
 body h1, h2, h3, h4, p, input, button {
     font-family: my_font;
-    color: #2E2E2E;
+     color: #2E2E2E;
 }
 
 h1 {
@@ -204,6 +204,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+
     
 }
 
