@@ -1,6 +1,6 @@
 body h1, h2, h3, h4, p, input, button {
     font-family: my_font;
-    color: #2E2E2E;
+     color: #2E2E2E;
 }
 
 h1 {
@@ -83,28 +83,21 @@ div div div.overlay_oscurante{
     height: 100%;
 }
 
- header {
-     margin-left: 25px;
-     margin-right: 25px;
-     ;
-     width: 90%;
-     
- }
- 
 
 .logo{
     float: left;
 }
 .menu{
     position: relative;
-    padding-right: 6em;
-    padding-left: 8em;
-    padding-top: 2.5em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    /*padding-top: 2.5em;*/
     line-height: 4em;
     width: 0 auto;
     
     
 }
+
 .titlemenu h2{
     text-align: center;
 }
@@ -113,9 +106,28 @@ div div div.overlay_oscurante{
 }
 .menu p{
     line-height: 1em;
+    margin-top: 0em;
+    margin-left: 0.2em;
+    
+}
+.titlemenu p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 40px 133px 0;
 }
 .price2{
     font-size: small;
+    color: #959595;
+    font-family: my_font;
+}
+.namefood h4{
+    animation: animazione_p 1s ease-in ;
+}
+.objectlist p{
+    animation: animazione_p 1s ease-in ;
+    line-height: 1rem;
+
 }
 
 .titlemenu{
@@ -124,6 +136,7 @@ div div div.overlay_oscurante{
     color: #2E2E2E;
     padding:40px 0px;
     position:relative;
+    margin-top: 12px;
    
 }
 .listmenu li{
@@ -135,15 +148,20 @@ div div div.overlay_oscurante{
 .listmenu span.week{
     color: #FF530A;
 }
+.listmenu h2{
+    font-size:20px;
+    margin-bottom: 1em ;
+}
 
 hr.line{
-    width: 20rem;
+    width: 9rem;
     border-top: none ;
-    border-bottom: 0.1rem solid #959595;
+    border-bottom: 1px solid #9d9583;
     border-top: none;
     margin-bottom: 2.5rem;
     border-right: none;
     border-left: none;
+    margin-top: 8px;
 }
 .moreinfor {
     display: flex;
@@ -158,7 +176,7 @@ hr.line{
     width:18rem;
     font-weight: bold;
     font-size: 15px;
-    
+    animation-name: animate__bounceIn;
     text-transform: uppercase;
     animation-duration: 500ms;
     animation-delay: 1200ms;
@@ -187,6 +205,11 @@ header {
     align-items: center;
     flex-direction: column;
     z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    
 }
 
 header div {
@@ -794,7 +817,7 @@ section.backgound_container button a{
         height: 1rem;
         width: 100%;
         border-bottom:  1px dotted #959595;
-        margin-top: 20px;
+        margin-top: 25px;
         position: absolute;
         top: 0;
     }
@@ -920,7 +943,11 @@ section.backgound_container button a{
         margin: 2rem auto 0 auto;
     }
     body header nav.navigation_bar {display: inline-block;
-    margin-left: 30px;}
+    margin-left: 30px;
+    background-color:  rgba(246, 246, 246, 0.8);
+
+    
+    }
 
     #menu_mobile {
         display: none;
@@ -940,6 +967,7 @@ section.backgound_container button a{
         text-decoration: none;
         color: 
         #2E2E2E;
+        
         
     }
     
@@ -1042,6 +1070,10 @@ section.backgound_container button a{
         display: block;
         margin: 0;
         width: 18rem;
+    }
+    section.menu{
+        padding-left: 4em;
+        padding-right: 3em;
     }
 }
 
