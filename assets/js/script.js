@@ -14,11 +14,11 @@ function scroll_gallery(){
         if (counter == 1 || counter == 3){
             if (counter%2 !== 0){
                 color_dots(Math.ceil((counter-1)/2) , Math.ceil(counter/2))
-
+                last_index++
             }
         } else if (last_index == 0){
             color_dots(last_index , counter)
-
+            last_index++
         }
         var_padding = 4.8
         var_immagini_galleria = 5
@@ -26,22 +26,22 @@ function scroll_gallery(){
         if (last_index !== 0){
             if (counter%2 !== 0){
                 color_dots(Math.ceil((counter-1)/2) , Math.ceil(counter/2))
-
+                last_index++
             }
         } else if (last_index == 0){
             color_dots(last_index , counter)
-
+            last_index++
         }
         var_padding = 0
         var_immagini_galleria = 6
     }else if(screen.width >= 992){
         if (counter == 3){
             color_dots(Math.ceil((counter-1)/2)-1 , Math.ceil(counter/2)-1)
-
+            last_index++
 
         } else if (last_index == 0){
             color_dots(last_index , counter)
-
+            last_index++
         }
         var_padding = 5.6
         var_immagini_galleria = 4
