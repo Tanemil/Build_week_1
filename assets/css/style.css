@@ -1,4 +1,4 @@
-body h1, h2, h3, h4, p, input, button {
+body h1, h2, h3, h4, p, input, button, header {
     font-family: my_font;
      color: #2E2E2E;
 }
@@ -41,6 +41,13 @@ body header label i.lni {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
+}
+
+body header label nav.navigation_bar {
+    
+
+
+
 }
 
 @keyframes animazione_p {
