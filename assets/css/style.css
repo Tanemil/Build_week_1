@@ -98,12 +98,10 @@ div div div.overlay_oscurante{
 
 header {
     background-color: rgba(246, 246, 246, 0.8) ;
+    padding: 1rem;
+    padding-bottom: 0.65rem;
     position: sticky;
-    padding: 1em;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
@@ -112,11 +110,9 @@ header {
 
 header div {
     display: inline-block;
-   
 }
 
 nav li {
-    display: flex;
     margin-bottom: 20px;
     
 }
@@ -136,7 +132,7 @@ input#menu_button {
 }
 
 input#menu_button:checked ~ nav {
-    height: 200px;
+    height: 250px;
 } 
 /*  nav li a::after {
     content: '';
@@ -156,10 +152,13 @@ input#menu_button:checked ~ nav {
 
 /* ------------- Slider Images / Carosello ------------- */
 
+main section div div.container_gallery{
+    margin: 0 1rem;
+}
+
 .container_First {
     justify-content: space-between;
     align-items: center;
-
 }
 
 .container_First span {
@@ -305,23 +304,30 @@ main section div div.gallery_dots button i{
     padding-bottom: 70px;
 }
 
+/* -------------- Main (Menu) ---------------- */
+
 .menu{
     position: relative;
-    padding-right: 2.5em;
-    padding-left: 2.5em;
-    /*padding-top: 2.5em;*/
-    line-height: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
     width: 0 auto;
 }
 
 .titlemenu h2{
     text-align: center;
+    font-size: 1.5rem;
+}
+.titlemenu h2 span{
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 .listmenu h2{
     font-size: 27px;
+    font-weight: bold;
 }
 .menu p{
     line-height: 1em;
+    margin: 0 auto;
     margin-top: 0em;
     margin-left: 0.2em;
     
@@ -330,15 +336,18 @@ main section div div.gallery_dots button i{
     text-align: center;
     font-size: 16px;
     line-height: 26px;
-    padding: 40px 133px 0;
 }
 .price2{
-    font-size: small;
-    color: #959595;
+    font-weight: normal;    
+    font-size: 0.9em;
+    color: #958566;
     font-family: my_font;
 }
 .namefood h4{
+    font-weight: normal;
+    font-size: 1.5em;
     animation: animazione_p 1s ease-in ;
+    line-height: 1.8em;
 }
 .objectlist p{
     animation: animazione_p 1s ease-in ;
@@ -349,7 +358,7 @@ main section div div.gallery_dots button i{
     text-align:center;
     font-weight: 500;
     color: #2E2E2E;
-    padding:40px 0px;
+    padding:100px 0;
     position:relative;
     margin-top: 12px;
    
@@ -365,7 +374,7 @@ main section div div.gallery_dots button i{
 }
 .listmenu h2{
     font-size:20px;
-    margin-bottom: 1em ;
+    margin-bottom: 2em ;
 }
 
 .line{
@@ -388,7 +397,6 @@ main section div div.gallery_dots button i{
     border:1px solid #FF530A;
     color: #FF530A;
     height: 5rem;
-    width:18rem;
     font-weight: bold;
     font-size: 15px;
     animation-name: animate__bounceIn;
@@ -404,7 +412,6 @@ main section div div.gallery_dots button i{
     color: #ffffff;
     cursor: pointer;
 }
-
 
 /* ---------- Main (Newsletter-Form) ------------ */
 
@@ -793,17 +800,38 @@ section.backgound_container button a{
 
 @media screen and (max-width: 768px) {
     header nav {
-        margin-top: 2em;
+        position: relative;
+        bottom: -2rem;
+        background-color: transparent;
         height: 0;
         overflow: hidden;
-        position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
+    }
+    nav ul{
+        display: flex;
+        height: 80%;
+        flex-direction: column;
+        flex: 1 1 0;
+    }
+    
+    nav ul li{
+        height: 100%;
+    }
+    
+    nav ul li a{
+        margin-top: 1.5rem;
     }
 
 }
 
 @media screen and (min-width:768px) {
+    header{
+        padding-bottom: 1rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
         content: "";
         position: absolute;
@@ -835,6 +863,14 @@ section.backgound_container button a{
         margin: 0 auto;
         padding: 0 2rem;
     }
+    .menu{
+        padding-right: 3em;
+        padding-left: 3em;
+        line-height: 4em;
+    }
+    .menu p {
+        padding: 0 0 20px 0;
+    }
     .div-images{
         min-width: 32%;
         padding: 0 0.3rem;
@@ -860,8 +896,9 @@ section.backgound_container button a{
         z-index: 2;
         background-color: #ffffff;
     }
-    div.titlemenu p{
-        padding-top: 30px;
+    .titlemenu p{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     div.listmenu ul li div div div.dotted{
@@ -1154,8 +1191,12 @@ section.backgound_container button a{
         width: 18rem;
     }
     section.menu{
-        padding-left: 4em;
-        padding-right: 3em;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .titlemenu p{
+        padding-left: 90px;
+        padding-right: 90px;
     }
 
     .titlemenu p {
@@ -1218,6 +1259,10 @@ section.backgound_container button a{
     }
     section.backgound_container button{
         width: 18rem;
+    }
+    section.menu{
+        padding-left: 7em;
+        padding-right: 7em;
     }
     .form input#name, input#email, input#text  {
         width: 95%;
