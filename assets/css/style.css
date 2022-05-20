@@ -112,9 +112,17 @@ header div {
     display: inline-block;
 }
 
+nav li {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+
 a {
     color: #2E2E2E;
     text-decoration: none;
+    
 }
 
 input#menu_button {
@@ -124,6 +132,16 @@ input#menu_button {
 input#menu_button:checked ~ nav {
     height: 200px;
 } 
+/*  nav li a::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width:100%;
+    height:3px;
+    background-color: #FF530A;
+    transition: .3s;
+} */
 
 @font-face {
     font-family: my_font;
@@ -1001,15 +1019,16 @@ section.backgound_container button a{
     }
 
     body header nav ul {
-        margin-right: auto;
         display: flex;
         justify-content: space-between;
        
     }
 
      header nav ul li {
+        
         display: inline-block;
-        margin: 0 0 0 1em;
+        margin-left: 20px;
+        margin: 0 5 0 10px;
     }
 
     header nav ul li a {
