@@ -112,11 +112,6 @@ header div {
     display: inline-block;
 }
 
-nav li {
-    margin-bottom: 20px;
-    
-}
-
 
 a {
     color: #2E2E2E;
@@ -132,7 +127,7 @@ input#menu_button {
 }
 
 input#menu_button:checked ~ nav {
-    height: 250px;
+    height: 280px;
 } 
 /* nav ul li::after {
     content: '';
