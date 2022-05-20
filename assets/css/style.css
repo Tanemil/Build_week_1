@@ -61,6 +61,12 @@ p{
 
 /* --------------------- Header --------------------- */
 
+header img{
+    padding: 0.5rem 0 0 0;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
 .dot{
     border-bottom: #959595 dotted;
     position:absolute;
@@ -99,7 +105,7 @@ div div div.overlay_oscurante{
 header {
     background-color: rgba(246, 246, 246, 0.8) ;
     padding: 1rem;
-    padding-bottom: 0.65rem;
+    padding-bottom: 0.30rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -821,7 +827,7 @@ section.backgound_container button a{
 
 @media screen and (min-width:768px) {
     header{
-        padding-bottom: 1rem ;
+        padding-bottom: 0.3rem ;
         display: flex;
         justify-content: space-between;
         align-items: center;
