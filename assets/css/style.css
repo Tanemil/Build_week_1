@@ -543,6 +543,19 @@ input#text {
     text-align: center;
 }
 
+.titlemenu hr {
+    margin-top: 40px;
+    color:rgb(247, 247, 247);
+
+}
+
+.titlemenu p {
+    width: 80%;
+    transform: translateX(-15%)
+}
+
+
+
 /* --------------- Footer ---------------- */
 
 footer h3 span {
@@ -772,6 +785,7 @@ section.backgound_container button a{
         width: 100%;
         transition: height 0.5s ease-out;
     }
+
 }
 
 @media screen and (min-width:768px) {
@@ -961,6 +975,11 @@ section.backgound_container button a{
         color: 
         #2E2E2E;
     }
+
+    .titlemenu p {
+        width: 80%;
+        transform: translateX(-9%)
+    }
 }
 @media screen and (min-width:992px){
     main section div div.gallery_dots button#button_gallery_last{
@@ -1065,6 +1084,12 @@ section.backgound_container button a{
         padding-left: 4em;
         padding-right: 3em;
     }
+
+    .titlemenu p {
+        width: 80%;
+        transform: translateX(-4%)
+    }
+
 }
 
 @media screen and (min-width:1200px){
@@ -1107,4 +1132,5 @@ section.backgound_container button a{
     .photo-stream {
         margin-left: 50px;
     }
+
 }
