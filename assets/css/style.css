@@ -116,10 +116,13 @@ header div {
 a {
     color: #2E2E2E;
     text-decoration: none;
-    
-    
-   
-    
+
+
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid red ;
+
 }
 
 input#menu_button {
@@ -320,17 +323,16 @@ main section div div.gallery_dots button i{
     font-size: 27px;
     font-weight: bold;
 }
+.titlemenu p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+}
 .menu p{
     line-height: 1em;
     margin: 0 auto;
     margin-top: 0em;
     margin-left: 0.2em;
-    
-}
-.titlemenu p{
-    text-align: center;
-    font-size: 16px;
-    line-height: 26px;
 }
 .price2{
     font-weight: normal;    
@@ -565,13 +567,6 @@ input#text {
     color:rgb(247, 247, 247);
 
 }
-
-.titlemenu p {
-    width: 80%;
-    transform: translateX(-15%)
-}
-
-
 
 /* --------------- Footer ---------------- */
 
@@ -1051,11 +1046,6 @@ section.backgound_container button a{
         color: 
         #2E2E2E;
     }
-
-    .titlemenu p {
-        width: 80%;
-        transform: translateX(-9%)
-    }
 }
 @media screen and (min-width:992px){
     section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
@@ -1192,11 +1182,6 @@ section.backgound_container button a{
     .titlemenu p{
         padding-left: 90px;
         padding-right: 90px;
-    }
-
-    .titlemenu p {
-        width: 80%;
-        transform: translateX(-4%)
     }
 
 }
