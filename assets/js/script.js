@@ -89,8 +89,6 @@ function scroll_gallery_dots(num_dot){
 
     console.log(last_index , num_dot-1)
     color_dots(last_index , num_dot-1)
-/*     document.getElementsByClassName('fa-circle')[last_index].style.color = '#DADADA'
-    document.getElementsByClassName('fa-circle')[num_dot-1].style.color = '#FF530A' */
 
     if (screen.width >= 768 && screen.width < 992 ){
         var_padding = 4.8

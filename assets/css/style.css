@@ -61,6 +61,10 @@ p{
 
 /* --------------------- Header --------------------- */
 
+header img{
+    padding: 0.6rem 0 0 0;
+}
+
 .dot{
     border-bottom: #959595 dotted;
     position:absolute;
@@ -99,7 +103,7 @@ div div div.overlay_oscurante{
 header {
     background-color: rgba(246, 246, 246, 0.8) ;
     padding: 1rem;
-    padding-bottom: 0.65rem;
+    padding-bottom: 0.40rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -117,10 +121,12 @@ a {
     color: #2E2E2E;
     text-decoration: none;
 
+
 }
 
 nav ul li:hover{
     border-bottom: 2px solid red ;
+
 }
 
 input#menu_button {
@@ -568,6 +574,10 @@ input#text {
 
 /* --------------- Footer ---------------- */
 
+.form_background{
+    background-color: white;
+}
+
 footer h3 span {
     color: #ff550b;
     font-weight: bold;
@@ -798,12 +808,12 @@ section.backgound_container button a{
     }
     nav ul{
         display: flex;
-        height: 80%;
         flex-direction: column;
         flex: 1 1 0;
     }
     
     nav ul li{
+        margin-bottom: 1.6rem;
         height: 100%;
     }
     
@@ -815,7 +825,7 @@ section.backgound_container button a{
 
 @media screen and (min-width:768px) {
     header{
-        padding-bottom: 1rem ;
+        padding-bottom: 0.4rem ;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -845,6 +855,10 @@ section.backgound_container button a{
     }
     main section div div.gallery_dots button#button_gallery_first{
         display: none;
+    }
+    header , section.menu , div.container-chef p , .form{
+        max-width: 44rem;
+        margin: 0 auto; 
     }
     main section div div.container_gallery{
         max-width: 46rem;
@@ -1082,6 +1096,10 @@ section.backgound_container button a{
         min-width: 24%;
         padding: 0 0.35rem;
     }
+    header , section.menu , div.container-chef p , .form{
+        max-width: 56rem;
+        margin: 0 auto; 
+    }
     main section div div.container_gallery{
         max-width: 58rem;
         margin: 0 auto;
@@ -1216,6 +1234,10 @@ section.backgound_container button a{
     }
     .scroll-images{
         height: 13rem;
+    }
+    header , section.menu ,div.container-chef p , .form {
+        max-width: 70rem;
+        margin: 0 auto; 
     }
     main section div div.container_gallery{
         max-width: 72rem;
