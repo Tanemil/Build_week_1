@@ -256,13 +256,12 @@ main section div div.gallery_dots button i{
      background-color: rgb(246, 246, 246);
      width: 100%;
      text-align: center;
-     margin-left: -3%;
-     padding-right: 6%;
      margin-top: 50px;
 }
 
 .img-chef {
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .container-chef h3 {
@@ -270,6 +269,7 @@ main section div div.gallery_dots button i{
     font-weight: 300;
     font-family: my_font;
     line-height: 1.3;
+    margin-bottom: 30px;
 }
 
 .container-chef span {
@@ -281,7 +281,7 @@ main section div div.gallery_dots button i{
 .container-chef hr {
     margin-bottom: 40px;
     margin-top: 25px;
-    color:rgb(247, 247, 247);
+    border: 0.5px solid rgb(221, 221, 221);
     width: 25%;
 }
 
@@ -354,7 +354,7 @@ main section div div.gallery_dots button i{
     margin-bottom: 1em ;
 }
 
-hr.line{
+.line{
     width: 9rem;
     border-top: none ;
     border-bottom: 1px solid #9d9583;
