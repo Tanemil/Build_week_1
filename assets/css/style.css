@@ -247,7 +247,7 @@ input#menu_button:checked ~ nav {
 }
 
 .scroll-images {
-    width: 100%;
+    width: 90%;
     height: 12rem;
     display: flex;
     overflow: hidden;
@@ -349,8 +349,9 @@ main section div div.gallery_dots button i{
      background-color: rgb(246, 246, 246);
      width: 100%;
      text-align: center;
-     margin-left: -3%;
-     padding-right: 6%;
+     margin-left: 0 auto;
+     padding: 0 auto;
+    justify-content: center;
      margin-top: 50px;
 }
 
