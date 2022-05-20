@@ -98,12 +98,10 @@ div div div.overlay_oscurante{
 
 header {
     background-color: rgba(246, 246, 246, 0.8) ;
+    padding: 1rem;
+    padding-bottom: 0.65rem;
     position: sticky;
-    padding: 1em;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +110,6 @@ header {
 
 header div {
     display: inline-block;
-   
 }
 
 a {
@@ -135,10 +132,13 @@ input#menu_button:checked ~ nav {
 
 /* ------------- Slider Images / Carosello ------------- */
 
+main section div div.container_gallery{
+    margin: 0 1rem;
+}
+
 .container_First {
     justify-content: space-between;
     align-items: center;
-
 }
 
 .container_First span {
@@ -367,7 +367,6 @@ main section div div.gallery_dots button i{
     border:1px solid #FF530A;
     color: #FF530A;
     height: 5rem;
-    width:18rem;
     font-weight: bold;
     font-size: 15px;
     animation-name: animate__bounceIn;
@@ -772,17 +771,38 @@ section.backgound_container button a{
 
 @media screen and (max-width: 768px) {
     header nav {
-        margin-top: 2em;
+        position: relative;
+        bottom: -2rem;
+        background-color: transparent;
         height: 0;
         overflow: hidden;
-        position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
+    }
+    nav ul{
+        display: flex;
+        height: 80%;
+        flex-direction: column;
+        flex: 1 1 0;
+    }
+    
+    nav ul li{
+        height: 100%;
+    }
+    
+    nav ul li a{
+        margin-top: 1.5rem;
     }
 
 }
 
 @media screen and (min-width:768px) {
+    header{
+        padding-bottom: 1rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
         content: "";
         position: absolute;
