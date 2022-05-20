@@ -131,7 +131,7 @@ input#menu_button {
 input#menu_button:checked ~ nav {
     height: 250px;
 } 
-/*  nav li a::after {
+/* nav ul li::after {
     content: '';
     position: absolute;
     top: 25px;
@@ -140,7 +140,7 @@ input#menu_button:checked ~ nav {
     height:3px;
     background-color: #FF530A;
     transition: .3s;
-} */
+}  */
 
 @font-face {
     font-family: my_font;
