@@ -301,23 +301,30 @@ main section div div.gallery_dots button i{
     padding-bottom: 70px;
 }
 
+/* -------------- Main (Menu) ---------------- */
+
 .menu{
     position: relative;
-    padding-right: 2.5em;
-    padding-left: 2.5em;
-    /*padding-top: 2.5em;*/
-    line-height: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
     width: 0 auto;
 }
 
 .titlemenu h2{
     text-align: center;
+    font-size: 1.5rem;
+}
+.titlemenu h2 span{
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 .listmenu h2{
     font-size: 27px;
+    font-weight: bold;
 }
 .menu p{
     line-height: 1em;
+    margin: 0 auto;
     margin-top: 0em;
     margin-left: 0.2em;
     
@@ -326,15 +333,18 @@ main section div div.gallery_dots button i{
     text-align: center;
     font-size: 16px;
     line-height: 26px;
-    padding: 40px 133px 0;
 }
 .price2{
-    font-size: small;
-    color: #959595;
+    font-weight: normal;    
+    font-size: 0.9em;
+    color: #958566;
     font-family: my_font;
 }
 .namefood h4{
+    font-weight: normal;
+    font-size: 1.5em;
     animation: animazione_p 1s ease-in ;
+    line-height: 1.8em;
 }
 .objectlist p{
     animation: animazione_p 1s ease-in ;
@@ -345,7 +355,7 @@ main section div div.gallery_dots button i{
     text-align:center;
     font-weight: 500;
     color: #2E2E2E;
-    padding:40px 0px;
+    padding:100px 0;
     position:relative;
     margin-top: 12px;
    
@@ -361,7 +371,7 @@ main section div div.gallery_dots button i{
 }
 .listmenu h2{
     font-size:20px;
-    margin-bottom: 1em ;
+    margin-bottom: 2em ;
 }
 
 .line{
@@ -399,7 +409,6 @@ main section div div.gallery_dots button i{
     color: #ffffff;
     cursor: pointer;
 }
-
 
 /* ---------- Main (Newsletter-Form) ------------ */
 
@@ -851,6 +860,14 @@ section.backgound_container button a{
         margin: 0 auto;
         padding: 0 2rem;
     }
+    .menu{
+        padding-right: 3em;
+        padding-left: 3em;
+        line-height: 4em;
+    }
+    .menu p {
+        padding: 0 0 20px 0;
+    }
     .div-images{
         min-width: 32%;
         padding: 0 0.3rem;
@@ -876,8 +893,9 @@ section.backgound_container button a{
         z-index: 2;
         background-color: #ffffff;
     }
-    div.titlemenu p{
-        padding-top: 30px;
+    .titlemenu p{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     div.listmenu ul li div div div.dotted{
@@ -1170,8 +1188,12 @@ section.backgound_container button a{
         width: 18rem;
     }
     section.menu{
-        padding-left: 4em;
-        padding-right: 3em;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .titlemenu p{
+        padding-left: 90px;
+        padding-right: 90px;
     }
 
     .titlemenu p {
@@ -1234,6 +1256,10 @@ section.backgound_container button a{
     }
     section.backgound_container button{
         width: 18rem;
+    }
+    section.menu{
+        padding-left: 7em;
+        padding-right: 7em;
     }
     .form input#name, input#email, input#text  {
         width: 95%;
