@@ -112,17 +112,15 @@ header div {
     display: inline-block;
 }
 
-nav li {
-    display: flex;
-    margin-bottom: 20px;
-    
-}
-
 
 a {
     color: #2E2E2E;
     text-decoration: none;
-    
+
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid red ;
 }
 
 input#menu_button {
@@ -130,9 +128,9 @@ input#menu_button {
 }
 
 input#menu_button:checked ~ nav {
-    height: 200px;
+    height: 280px;
 } 
-/*  nav li a::after {
+/* nav ul li::after {
     content: '';
     position: absolute;
     top: 25px;
@@ -141,7 +139,7 @@ input#menu_button:checked ~ nav {
     height:3px;
     background-color: #FF530A;
     transition: .3s;
-} */
+}  */
 
 @font-face {
     font-family: my_font;
