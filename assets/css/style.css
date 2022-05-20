@@ -25,7 +25,7 @@ h3 {
 }
 
 h4{
-    font-weight: bold;
+    font-weight:bold;
     font-size: 1.2rem;
 }
 
@@ -42,13 +42,7 @@ body header label i.lni {
     vertical-align: -0.125em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
 }
-
-
-
-
-
 
 
 @keyframes animazione_p {
@@ -104,12 +98,10 @@ div div div.overlay_oscurante{
 
 header {
     background-color: rgba(246, 246, 246, 0.8) ;
+    padding: 1rem;
+    padding-bottom: 0.65rem;
     position: sticky;
-    padding: 1em;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
@@ -118,12 +110,19 @@ header {
 
 header div {
     display: inline-block;
-   
 }
+
+nav li {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
 
 a {
     color: #2E2E2E;
     text-decoration: none;
+    
 }
 
 input#menu_button {
@@ -133,6 +132,16 @@ input#menu_button {
 input#menu_button:checked ~ nav {
     height: 200px;
 } 
+/*  nav li a::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width:100%;
+    height:3px;
+    background-color: #FF530A;
+    transition: .3s;
+} */
 
 @font-face {
     font-family: my_font;
@@ -141,11 +150,13 @@ input#menu_button:checked ~ nav {
 
 /* ------------- Slider Images / Carosello ------------- */
 
+main section div div.container_gallery{
+    margin: 0 1rem;
+}
+
 .container_First {
     justify-content: space-between;
     align-items: center;
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 .container_First span {
@@ -256,13 +267,12 @@ main section div div.gallery_dots button i{
      background-color: rgb(246, 246, 246);
      width: 100%;
      text-align: center;
-     margin-left: -3%;
-     padding-right: 6%;
      margin-top: 50px;
 }
 
 .img-chef {
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .container-chef h3 {
@@ -270,6 +280,7 @@ main section div div.gallery_dots button i{
     font-weight: 300;
     font-family: my_font;
     line-height: 1.3;
+    margin-bottom: 30px;
 }
 
 .container-chef span {
@@ -281,7 +292,7 @@ main section div div.gallery_dots button i{
 .container-chef hr {
     margin-bottom: 40px;
     margin-top: 25px;
-    color:rgb(247, 247, 247);
+    border: 0.5px solid rgb(221, 221, 221);
     width: 25%;
 }
 
@@ -364,7 +375,7 @@ main section div div.gallery_dots button i{
     margin-bottom: 2em ;
 }
 
-hr.line{
+.line{
     width: 9rem;
     border-top: none ;
     border-bottom: 1px solid #9d9583;
@@ -384,7 +395,6 @@ hr.line{
     border:1px solid #FF530A;
     color: #FF530A;
     height: 5rem;
-    width:18rem;
     font-weight: bold;
     font-size: 15px;
     animation-name: animate__bounceIn;
@@ -552,6 +562,19 @@ input#text {
     list-style-type: none;
     text-align: center;
 }
+
+.titlemenu hr {
+    margin-top: 40px;
+    color:rgb(247, 247, 247);
+
+}
+
+.titlemenu p {
+    width: 80%;
+    transform: translateX(-15%)
+}
+
+
 
 /* --------------- Footer ---------------- */
 
@@ -775,16 +798,61 @@ section.backgound_container button a{
 
 @media screen and (max-width: 768px) {
     header nav {
-        margin-top: 2em;
+        position: relative;
+        bottom: -2rem;
+        background-color: transparent;
         height: 0;
         overflow: hidden;
-        position: relative;
         width: 100%;
         transition: height 0.5s ease-out;
     }
+    nav ul{
+        display: flex;
+        height: 80%;
+        flex-direction: column;
+        flex: 1 1 0;
+    }
+    
+    nav ul li{
+        height: 100%;
+    }
+    
+    nav ul li a{
+        margin-top: 1.5rem;
+    }
+
 }
 
 @media screen and (min-width:768px) {
+    header{
+        padding-bottom: 1rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 28%;
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        background: #fff;
+        transform: rotate(45deg);
+    }
+
+    section.backgound_container div div div.box3 div::after , section.backgound_container div div div.box4 div::after{
+        content: "";
+        position: absolute;
+        right: 355px;
+        top: 28%;
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        background: #fff;
+        transform: rotate(45deg);
+    }
     main section div div.gallery_dots button#button_gallery_first{
         display: none;
     }
@@ -969,15 +1037,16 @@ section.backgound_container button a{
     }
 
     body header nav ul {
-        margin-right: auto;
         display: flex;
         justify-content: space-between;
        
     }
 
      header nav ul li {
+        
         display: inline-block;
-        margin: 0 0 0 1em;
+        margin-left: 20px;
+        margin: 0 5 0 10px;
     }
 
     header nav ul li a {
@@ -985,8 +1054,42 @@ section.backgound_container button a{
         color: 
         #2E2E2E;
     }
+
+    .titlemenu p {
+        width: 80%;
+        transform: translateX(-9%)
+    }
 }
 @media screen and (min-width:992px){
+    section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: 218px;
+    }
+
+    section.backgound_container div div div.box3 div::after , section.backgound_container div div div.box4 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: -15px;
+    }
     main section div div.gallery_dots button#button_gallery_last{
         display: none;
     }
@@ -1093,9 +1196,44 @@ section.backgound_container button a{
         padding-left: 90px;
         padding-right: 90px;
     }
+
+    .titlemenu p {
+        width: 80%;
+        transform: translateX(-4%)
+    }
+
 }
 
 @media screen and (min-width:1200px){
+    section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: 274px;
+    }
+
+    section.backgound_container div div div.box3 div::after , section.backgound_container div div div.box4 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: -15px;
+    }
     .scroll-images{
         height: 13rem;
     }
@@ -1139,4 +1277,5 @@ section.backgound_container button a{
     .photo-stream {
         margin-left: 50px;
     }
+
 }
