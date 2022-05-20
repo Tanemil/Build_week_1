@@ -45,12 +45,6 @@ body header label i.lni {
     
 }
 
-
-
-
-
-
-
 @keyframes animazione_p {
     0% {opacity: 0}
     50% { opacity: 0.5; }
@@ -96,6 +90,9 @@ div div div.overlay_oscurante{
 .logo{
     float: left;
 }
+
+/* ----------------- Main (Menu') ------------------ */
+
 .menu{
     position: relative;
     padding-right: 2.5em;
