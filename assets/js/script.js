@@ -1,3 +1,4 @@
+// counter per le immagini
 let counter = 0
 
 let last_index = 0
@@ -8,7 +9,7 @@ function scroll_gallery(){
 
     let var_padding 
     let var_immagini_galleria
-
+    // setta il padding e quanti click puoi fare in base alle immagini che ci sono in galleria ed in base alla width dello schermo
     if (screen.width >= 768 && screen.width < 992 ){
         if (counter == 1 || counter == 3){
             if (counter%2 !== 0){
