@@ -570,6 +570,10 @@ input#text {
 
 /* --------------- Footer ---------------- */
 
+.form_background{
+    background-color: white;
+}
+
 footer h3 span {
     color: #ff550b;
     font-weight: bold;
@@ -848,6 +852,10 @@ section.backgound_container button a{
     main section div div.gallery_dots button#button_gallery_first{
         display: none;
     }
+    header , section.menu , div.container-chef p , .form{
+        max-width: 44rem;
+        margin: 0 auto; 
+    }
     main section div div.container_gallery{
         max-width: 46rem;
         margin: 0 auto;
@@ -1084,6 +1092,10 @@ section.backgound_container button a{
         min-width: 24%;
         padding: 0 0.35rem;
     }
+    header , section.menu , div.container-chef p , .form{
+        max-width: 56rem;
+        margin: 0 auto; 
+    }
     main section div div.container_gallery{
         max-width: 58rem;
         margin: 0 auto;
@@ -1218,6 +1230,10 @@ section.backgound_container button a{
     }
     .scroll-images{
         height: 13rem;
+    }
+    header , section.menu ,div.container-chef p , .form {
+        max-width: 70rem;
+        margin: 0 auto; 
     }
     main section div div.container_gallery{
         max-width: 72rem;
