@@ -804,12 +804,12 @@ section.backgound_container button a{
     }
     nav ul{
         display: flex;
-        height: 80%;
         flex-direction: column;
         flex: 1 1 0;
     }
     
     nav ul li{
+        margin-bottom: 1.6rem;
         height: 100%;
     }
     
