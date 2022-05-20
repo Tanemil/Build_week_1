@@ -144,8 +144,7 @@ input#menu_button:checked ~ nav {
 .container_First {
     justify-content: space-between;
     align-items: center;
-    margin-left: 3%;
-    margin-right: 3%;
+
 }
 
 .container_First span {
