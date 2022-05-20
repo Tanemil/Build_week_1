@@ -790,6 +790,29 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:768px) {
+    section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 28%;
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        background: #fff;
+        transform: rotate(45deg);
+    }
+
+    section.backgound_container div div div.box3 div::after , section.backgound_container div div div.box4 div::after{
+        content: "";
+        position: absolute;
+        right: 355px;
+        top: 28%;
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        background: #fff;
+        transform: rotate(45deg);
+    }
     main section div div.gallery_dots button#button_gallery_first{
         display: none;
     }
@@ -988,6 +1011,35 @@ section.backgound_container button a{
     }
 }
 @media screen and (min-width:992px){
+    section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: 218px;
+    }
+
+    section.backgound_container div div div.box3 div::after , section.backgound_container div div div.box4 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: -15px;
+    }
     main section div div.gallery_dots button#button_gallery_last{
         display: none;
     }
@@ -1099,6 +1151,35 @@ section.backgound_container button a{
 }
 
 @media screen and (min-width:1200px){
+    section.backgound_container div div div.box1 div::after , section.backgound_container div div div.box2 div::after, section.backgound_container div div div.box5 div::after , section.backgound_container div div div.box6 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: 274px;
+    }
+
+    section.backgound_container div div div.box3 div::after , section.backgound_container div div div.box4 div::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: -15px;
+    }
     .scroll-images{
         height: 13rem;
     }
