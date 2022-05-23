@@ -125,7 +125,7 @@ a {
 }
 
 nav ul li:hover{
-    border-bottom: 2px solid #FF530A ;
+    border-bottom: 2px solid #FF5333 ;
 
 }
 
@@ -136,16 +136,6 @@ input#menu_button {
 input#menu_button:checked ~ nav {
     height: 280px;
 } 
-/* nav ul li::after {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width:100%;
-    height:3px;
-    background-color: #FF530A;
-    transition: .3s;
-}  */
 
 @font-face {
     font-family: my_font;
